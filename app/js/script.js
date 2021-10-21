@@ -119,7 +119,7 @@ window.addEventListener('DOMContentLoaded', function () {
   //run
   try {
     if (document.querySelector('#run-buttons-container')) {
-      Object(_modules_tabs__WEBPACK_IMPORTED_MODULE_3__["default"])('.run__tabs', 'problems__text--active', '#run-buttons-container', '.problems__point', 'problems__point--active');
+      Object(_modules_tabs__WEBPACK_IMPORTED_MODULE_3__["default"])('.run__tabs', 'problems__text--active', '#run-buttons-container', '.problems__point', 'problems__point--active', '.problems__arrow-right', '.problems__arrow-left');
     }
 
     Object(_modules_sliders__WEBPACK_IMPORTED_MODULE_0__["default"])();
@@ -176,7 +176,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
   try {
     if (document.querySelector('#velo-buttons-container')) {
-      Object(_modules_tabs__WEBPACK_IMPORTED_MODULE_3__["default"])('.veloproblems__inner-tabs', 'veloproblems__inner-tabs--active', '#velo-buttons-container', '.veloproblems__point', 'veloproblems__point--big');
+      Object(_modules_tabs__WEBPACK_IMPORTED_MODULE_3__["default"])('.veloproblems__inner-tabs', 'veloproblems__inner-tabs--active', '#velo-buttons-container', '.veloproblems__point', 'veloproblems__point--big', '.veloproblems__right', '.veloproblems__left');
     }
 
     Object(_modules_velo__WEBPACK_IMPORTED_MODULE_6__["default"])();
@@ -618,10 +618,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var core_js_modules_web_dom_collections_for_each_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_dom_collections_for_each_js__WEBPACK_IMPORTED_MODULE_0__);
 
 
-var tabs = function tabs(tabsSelector, tabActiveClass, buttonsContainerSelector, buttonSelector, buttonActiveClass) {
+var tabs = function tabs(tabsSelector, tabActiveClass, buttonsContainerSelector, buttonSelector, buttonActiveClass, arrowNextSelector, arrowPrevSelector) {
   var tabs = document.querySelectorAll(tabsSelector);
   var buttonsContainer = document.querySelector(buttonsContainerSelector);
   var buttons = document.querySelectorAll(buttonSelector);
+  var arrowNext = document.querySelector(arrowNextSelector);
+  var arrowPrev = document.querySelector(arrowPrevSelector);
+  var counter = 0;
 
   var hideElements = function hideElements(elements, activeClass) {
     elements.forEach(function (item) {
@@ -630,15 +633,57 @@ var tabs = function tabs(tabsSelector, tabActiveClass, buttonsContainerSelector,
   };
 
   buttonsContainer.addEventListener('click', function (e) {
-    buttons.forEach(function (item) {
+    buttons.forEach(function (item, index) {
       if (item === e.target) {
+        hideElements(tabs, tabActiveClass);
+        hideElements(buttons, buttonActiveClass);
+        item.classList.add(buttonActiveClass);
+        counter = index;
+      }
+    });
+    tabs.forEach(function (item) {
+      if (e.target.dataset.pain === item.dataset.pain) {
+        item.classList.add(tabActiveClass);
+      }
+    });
+  });
+  arrowNext.addEventListener('click', function () {
+    counter += 1;
+
+    if (counter >= tabs.length) {
+      counter = 0;
+    }
+
+    buttons.forEach(function (item, index) {
+      if (index === counter) {
         hideElements(tabs, tabActiveClass);
         hideElements(buttons, buttonActiveClass);
         item.classList.add(buttonActiveClass);
       }
     });
-    tabs.forEach(function (item) {
-      if (e.target.dataset.pain === item.dataset.pain) {
+    tabs.forEach(function (item, index) {
+      if (index === counter) {
+        item.classList.add(tabActiveClass);
+      }
+    });
+  });
+  arrowPrev.addEventListener('click', function () {
+    counter = counter - 1;
+
+    if (counter < 0) {
+      counter = tabs.length - 1;
+    }
+
+    console.log(counter);
+    buttons.forEach(function (item, index) {
+      if (index === counter) {
+        hideElements(tabs, tabActiveClass);
+        hideElements(buttons, buttonActiveClass);
+        item.classList.add(buttonActiveClass);
+      }
+    });
+    tabs.forEach(function (item, index) {
+      if (index === counter) {
         item.classList.add(tabActiveClass);
       }
     });

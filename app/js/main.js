@@ -13,7 +13,7 @@ window.addEventListener('DOMContentLoaded', () => {
   //run
 try {
   if (document.querySelector('#run-buttons-container')) {
-    tabs('.run__tabs', 'problems__text--active', '#run-buttons-container', '.problems__point', 'problems__point--active');
+    tabs('.run__tabs', 'problems__text--active', '#run-buttons-container', '.problems__point', 'problems__point--active', '.problems__arrow-right', '.problems__arrow-left');
   }
   sliders();
 
@@ -63,7 +63,7 @@ try {
 //velo
 try {
   if (document.querySelector('#velo-buttons-container')) {
-    tabs('.veloproblems__inner-tabs', 'veloproblems__inner-tabs--active', '#velo-buttons-container', '.veloproblems__point', 'veloproblems__point--big');
+    tabs('.veloproblems__inner-tabs', 'veloproblems__inner-tabs--active', '#velo-buttons-container', '.veloproblems__point', 'veloproblems__point--big', '.veloproblems__right', '.veloproblems__left');
   }
   velo();
   mse('#velo-mistakes-mse');
