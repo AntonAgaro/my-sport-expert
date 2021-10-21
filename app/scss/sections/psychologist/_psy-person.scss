@@ -1,0 +1,351 @@
+.psy-person {
+  position: relative;
+  padding-top: 54px;
+  padding-bottom: 48px;
+
+  &__contacts {
+    max-width: 295px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  &__contacts-item {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__contacts-icon {
+    width: 19px;
+    height: 19px;
+  }
+
+  &__contacts-link {
+    font-family : Montserrat;
+    font-size : 12px;
+    line-height : 24.93px;
+    color : #333333;
+  }
+
+  &__descr {
+    margin-top: 12px;
+    max-width: 439px;
+    font-family : Montserrat;
+    font-size : 12px;
+    line-height : 14.7px;
+    color : #333333;
+  }
+
+  &__tabs-inner {
+    max-width: 587px;
+    margin-top: 27px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  &__tabs-items-list-text {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 100%;
+    height: auto;
+    font-family : Montserrat;
+    font-size : 10px;
+    line-height : 14.7px;
+    color : #333333;
+  }
+
+  &___tabs-items {
+    position: relative;
+  }
+
+  &__tab-content {
+    position: relative;
+    margin-top: 183px;
+    width: 1400px;
+  }
+
+  &__tab-content-divider {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: #333333;
+
+    &--top {
+      z-index: 1;
+      top: 50px;
+    }
+
+    &--bot {
+      z-index: 1;
+      top: 155px;
+    }
+  }
+
+  &__tab-inner {
+    max-width: 1020px;
+    margin: 0 auto;
+  }
+
+  &__tab-content-title {
+    margin-bottom: 21px;
+    text-align: right;
+    font-family : Yeseva One;
+    font-size : 14px;
+    line-height : 18.95px;
+    color : #333333;
+  }
+
+  &__tabitems-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+
+  &__tab-inner-item {
+    position: relative;
+    z-index: 10;
+    width: 150px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__tab-inner-number {
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #333333;
+    font-family : Yeseva One;
+    font-size : 12px;
+    color: #FFFFFF;
+  }
+
+  &__tab-inner-text {
+    text-align: center;
+    font-family : Montserrat;
+    font-size : 10px;
+    line-height : 14.7px;
+    color : #333333;
+  }
+
+  &__tab-inner-descr {
+    max-width: 104px;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 6px;
+    text-align: center;
+    font-family : Montserrat;
+    font-size : 10px;
+  }
+
+  &__tab-inner-price {
+    font-family : Myriad Pro;
+    font-size : 18px;
+    line-height : 21.17px;
+    color : #BD2333;
+  }
+
+  &__tab-inner-btn {
+    width: 87px;
+    height: 25px;
+  }
+}
+
+@media (max-width: 1064px) {
+  .psy-person {
+    padding-top: 52px;
+    padding-bottom: 45px;
+
+    &__title {
+      font-size: 28px;
+    }
+
+    &__tabs-items-list-text {
+      // display: none;
+    }
+
+    &__tab-content {
+      width: 100%;
+      margin-top: 160px;
+    }
+
+    &__tab-content-title {
+      font-size : 18px;
+      line-height : 20px;
+    }
+
+    &__tab-inner {
+      padding: 0 60px;
+    }
+
+    &__tabitems-wrapper {
+      margin-bottom: 25px;
+    }
+  }
+}
+
+@media (max-width: 764px) {
+  .psy-person {
+    padding-top: 45px;
+
+    &__contacts-link {
+      font-size: 9px;
+    }
+
+    &__title {
+      margin-top: 10px;
+      text-align: center;
+      font-size : 16px;
+      line-height : 18px;
+    }
+
+    &__descr {
+      margin: 0 auto;
+      margin-top: 2px;
+      max-width: 180px;
+      text-align: center;
+      font-size : 9px;
+      line-height : 12px;
+    }
+
+    &__tabs-innerround {
+      display: none;
+    }
+
+    &__tabs-inner {
+      flex-flow: column;
+      align-items: center;
+      gap: 20px;
+    }
+
+    &___tabs-items {
+      position: relative;
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      gap: 10px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 5px;
+        height: 5px;
+        background: #333333;
+        border-radius: 100%;
+      }
+    }
+
+    &___tabs-items-title {
+      max-width: 140px;
+      text-align: center;
+      font-family : Yeseva One;
+      font-size: 11px;
+    }
+
+    &__tabs-items-list-text {
+      position: static;
+      text-align: center;
+    }
+
+    &__tab-content {
+      margin-top: 10px;
+    }
+
+    &__tab-content-divider {
+      display: none;
+    }
+
+    &__tab-content-title {
+      font-size : 11px;
+      line-height : 12px;
+    }
+
+    &__tab-inner {
+      padding: 0 30px;
+    }
+
+    &__tabitems-wrapper {
+      margin-bottom: 0;
+      display: grid!important;
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 20px;
+      overflow-x: hidden;
+    }
+
+    &__tab-inner-item {
+      width: auto;
+    }
+
+    &__tab-inner-item--first {
+      position: relative;
+      z-index: 100;
+    }
+
+    &__tab-inner-text {
+      font-size: 9px;
+    }
+
+    &__tab-inner-number {
+      &--half-top {
+        position: relative;
+        &::before {
+          z-index: -10;
+          content: "";
+          position: absolute;
+          opacity: 0.99;
+          top: 50%;
+          left: -226px;
+          transform: translateY(-50%);
+          width: 226px;
+          height: 2px;
+          background: #333333;
+        }
+      }
+
+      &--top-reverse {
+        position: relative;
+        &::before {
+          z-index: -10;
+          content: "";
+          position: absolute;
+          opacity: 0.99;
+          top: 50%;
+          right: -226px;
+          transform: translateY(-50%);
+          width: 226px;
+          height: 2px;
+          background: #333333;
+        }
+      }
+
+      &--middle {
+        position: relative;
+        &::before {
+          z-index: -1;
+          content: "";
+          position: absolute;
+          opacity: 0.99;
+          top: 50%;
+          left: -95px;
+          transform: translateY(-50%);
+          width: 297px;
+          height: 2px;
+          background: #333333;
+        }
+      }
+    }
+  }
+}

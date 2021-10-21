@@ -1,0 +1,81 @@
+.small-video {
+  height: 330px;
+  background: #333333;
+  padding-top: 34px;
+
+  &__title {
+    margin: 0 auto;
+    max-width: 305px;
+    font-family : Yeseva One;
+    font-size : 29px;
+    line-height : 35.19px;
+    color : #FFFFFF;
+  }
+
+  &__inner {
+    margin: 0 auto;
+    margin-top: 25px;
+  }
+
+  &__slider-arrow {
+    width: 12px;
+  }
+
+  &__slider-prev {
+    position: absolute;
+    top: 50%;
+    left: -20px;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  &__slider-next {
+    position: absolute;
+    top: 50%;
+    right: -20px;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  &__slider {
+    position: relative;
+  }
+
+  &__slide {
+    height: 173px;
+    display: flex!important;
+    flex-flow: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__slide-img {
+    max-width: 230px;
+  }
+
+  &__slide-text {
+    max-width: 230px;
+    text-align: center;
+    font-family : Montserrat;
+    font-size : 10px;
+    line-height : 14.58px;
+    color : #FFFFFF;
+  }
+}
+
+@media (max-width: 764px) {
+  .small-video {
+
+
+    &__title {
+      font-size : 16px;
+      line-height : 18px;
+      text-align: center;
+    }
+  }
+}

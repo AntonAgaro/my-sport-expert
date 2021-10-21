@@ -1,0 +1,248 @@
+.help {
+  width: 100%;
+  padding-top: 85px;
+  padding-bottom: 50px;
+
+  &__wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    max-width: 300px;
+    font-family : Yeseva One;
+    font-size : 29px;
+    color : #333333;
+  }
+  
+  &__subtitle {
+    font-family : Yeseva One;
+    font-size : 14px;
+    color : #BD2333;
+  }
+
+  &__content {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__content-item {
+    max-width: 263px;
+    height: 327px;
+    padding: 0 30px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    border-right: 1px solid #CCCCCC;
+  }
+
+  &__content-title {
+    font-family : Yeseva One;
+    font-size : 18px;
+    line-height : 21.13px;
+    color : #000000;
+  }
+
+  &__content-list {
+    height: 210px;
+    padding-top: 16px;
+  }
+
+  &__content-list-item {
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 4px;
+      left: -10px;
+      width: 5px;
+      height: 5px;
+      background: #BD2333;
+      border-radius: 100%;
+    }
+  }
+
+  &__content-list-text {
+    font-family: 'Montserrat';
+    font-size : 10px;
+  }
+
+
+  &__content-cost-wrapper {
+    width: 100%;
+  }
+
+  &__content-cost {
+    font-family : Yeseva One;
+    font-size : 18px;
+    line-height : 21.13px;
+    color : #000000;
+  }
+
+  &__content-btn-wrapper {
+    width: 100%;
+  }
+
+  &__content-btn {
+    margin-top: 5px;
+    max-width: 87px;
+    height: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #BD2333;
+    border-radius: 10px;
+    border: none;
+    font-family : Yeseva One;
+    font-size : 11px;
+    line-height : 13.59px;
+    color : #FFFFFF;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 960px) {
+  .help {
+    padding-top: 25px;
+    height: 526px;
+
+    &__wrapper {
+      max-width: 900px;
+    }
+
+    &__title {
+      max-width: 326px;
+      padding-left: 27px;
+      font-size : 28px;
+      line-height : 30px;
+    }
+
+    &__subtitle {
+      padding-left: 27px;
+      font-size: 18px;
+    }
+
+    &__content {
+      padding-left: 23px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    &__content-item {
+      padding: 0;
+      width: 205px;
+
+      &:last-child {
+        border-right: none;
+      }
+    }
+
+    &__content-list-text {
+      font-size: 12px;
+    }
+
+    &__content-cost-wrapper {
+      margin-top: 24px;
+    }
+  }
+}
+
+@media (max-width: 764px) {
+  .help {
+    
+
+    &__title {
+      max-width: 200px;
+      margin: 0 auto;
+      text-align: center;
+      font-size : 16px;
+      line-height : 18.91px;
+    }
+
+    &__subtitle {
+      margin: 0 auto;
+      padding: 0;
+      margin-top: 10px;
+      font-size : 9px;
+      line-height : 18.91px;
+      text-align: center;
+    }
+
+    &__content {
+      position: relative;
+      padding: 0;
+      display: block;
+      margin: 0 auto;
+      width: 200px;
+      height: auto;
+    }
+
+    &__content-title {
+      font-size : 16px;
+      line-height : 18px;
+      text-align: center;
+    }
+
+    &__content-list {
+      height: auto;
+    }
+
+    &__content-item {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      border-right: none;
+    }
+
+    &__content-list-text {
+      width: 178px;
+      font-size : 9px;
+      line-height : 12px;
+    }
+
+    &__content-list-item {
+      margin-left: 20px;
+    }
+
+    &__content-cost-wrapper {
+      margin-top: 20px;
+    }
+
+    &__content-cost {
+      font-size : 16px;
+    }
+
+    &__content-btn {
+      width: 114px;
+      height: 25px;
+    }
+
+    &__slider-arrow {
+      width: 6px;
+      height: 12px;
+      cursor: pointer;
+    }
+
+    &__slider-prev {
+      position: absolute;
+      top: 50%;
+      left: -20%;
+      transform: translateY(-50%);
+      background: transparent;
+      border: none;
+      cursor: pointer;
+    }
+
+    &__slider-next {
+      position: absolute;
+      top: 50%;
+      right: -20%;
+      transform: translateY(-50%);
+      background: transparent;
+      border: none;
+      cursor: pointer;
+    }
+  }
+}

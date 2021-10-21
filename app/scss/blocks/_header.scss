@@ -1,0 +1,133 @@
+.header {
+  position: relative;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-top: 59px;
+  padding-left: 67px;
+
+  &__wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 43px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 28px;
+  }
+
+  &__list-item {
+    font-size : 11px;
+  }
+
+  &__list-link {
+    font-family : Yeseva One;
+    font-size : 11px;
+    color : #000000;
+  }
+
+  &__mobile-icons {
+    display: none;
+  }
+}
+
+.contacts {
+  position: absolute;
+  top: 56px;
+  right: 34px;
+  width: 200px;
+  font-family : Yeseva One;
+  font-size : 11px;
+  line-height : 13.39px;
+  color : #333333;
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  &__adress {
+    margin-top: 9px;
+    margin-right: 6px;
+    text-align: right;
+  }
+
+  &__phone {
+    margin-top: 16px;
+    text-align: right;
+  }
+
+  &__phone-link {
+    font-family : Yeseva One;
+    font-size : 18px;
+    color : #333333;
+  }
+}
+
+@media (max-width: 960px) {
+  .header {
+    padding-top: 53px;
+    padding-left: 59px;
+
+    &__logo {
+      width: 137px;
+    }
+
+    &__wrapper {
+      flex-flow: column;
+      align-items: flex-start;
+      gap: 21px;
+    }
+  }
+
+  .contacts {
+    top: 52px;
+    right: 58px;
+  }
+}
+
+@media (max-width: 764px) {
+  .header {    
+    padding: 0 15px;
+    padding-top: 25px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 10px;
+
+    &__logo {
+      display: none;;
+    }
+
+    &__mobile-icons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    &__mobile-phone {
+      width: 18px;
+    }
+  }
+
+  .nav {
+    
+  }
+
+  .header__list {
+    gap: 10px;
+  }
+
+  .header__list-link {
+    font-size: 8px;
+  }
+
+  .contacts {
+    display: none;
+  }
+
+}

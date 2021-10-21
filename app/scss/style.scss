@@ -1,0 +1,67 @@
+
+@import './global/vars';
+@import './global/fonts';
+@import './global/reset';
+@import './global/global';
+@import './global/mixins';
+
+//blocks
+@import './blocks/header';
+@import './blocks/red-line';
+@import './blocks/footer';
+
+//sections
+@import './sections/first';
+@import './sections/map-mobile';
+
+@import './sections/run/run';
+@import './sections/run/problems';
+@import './sections/run/bio';
+@import './sections/run/report';
+@import './sections/run/help';
+@import './sections/run/clients';
+@import './sections/run/company';
+@import './sections/run/reviews';
+@import './sections/run/partners';
+@import './sections/run/map';
+@import './sections/run/expert';
+
+@import './sections/velo/veloproblems';
+@import './sections/velo/mistakes';
+@import './sections/velo/indicators';
+@import './sections/velo/video';
+@import './sections/velo/custom';
+@import './sections/velo/analysis';
+@import './sections/velo/goal';
+@import './sections/specialist';
+@import './sections/velo/bikes';
+
+@import './sections/wattbike/choose';
+@import './sections/wattbike/track';
+@import './sections/wattbike/trener';
+@import './sections/wattbike/men';
+@import './sections/wattbike/wattbike-reviews';
+@import './sections/wattbike/wattbike-problems';
+
+@import './sections/kinezio/kinezio-expert';
+@import './sections/kinezio/small-video';
+@import './sections/kinezio/white-reviews';
+@import './sections/kinezio/kinezio-tabs';
+@import './sections/kinezio/kinezio-help';
+@import './sections/kinezio/kinezio-center';
+@import './sections/kinezio/kinezio-choose';
+
+@import './sections/psychologist/psy-about';
+@import './sections/psychologist/psy-person';
+
+@import './sections/insoles/first';
+@import './sections/insoles/insoles-problems';
+@import './sections/insoles/insoles-choose';
+@import './sections/insoles/making';
+@import './sections/insoles/insoles-mistakes';
+@import './sections/insoles/kinds';
+@import './sections/insoles/garanty';
+@import './sections/insoles/insoles-company';
+
+@import './blocks/animation';
+@import './blocks/mysport';

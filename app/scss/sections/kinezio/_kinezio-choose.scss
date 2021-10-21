@@ -1,0 +1,134 @@
+.kinezio-choose {
+  position: relative;
+  z-index: -1;
+  height: 787px;
+  background: #F0F0F0;
+  padding-top: 41px;
+
+  &__title {
+    text-align: center;
+    max-width: 740px;
+    margin: 0 auto;
+  }
+
+  &__inner {
+    margin: 0 auto;
+    max-width: 911px;
+    margin-top: 55px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__inner-item {
+    flex-basis: 33%;
+    padding: 0 16px;
+    border-right: 1px solid #CCCCCC;
+    &:last-child {
+      border-right: none;
+    }
+  }
+
+  &__inner-item-content {
+    margin: 0 auto;
+    height: 541px;
+    max-width: 287px;
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+  }
+
+  &__inner-red-title {
+    margin-bottom: 6px;
+    font-family : Yeseva One;
+    font-size : 18px;
+    line-height : 14.58px;
+    color : #BD2333;
+  }
+
+  &__inner-subtitle {
+    font-family : Yeseva One;
+    font-size : 10px;
+    line-height : 14.58px;
+    color : #000000;
+  }
+
+  &__inner-text {
+    font-family : Montserrat;
+    font-size : 10px;
+    line-height : 13.12px;
+    color : #333333;
+
+    &--redround {
+      max-width: 200px;
+      display: block;
+      clear: both;
+      float: left;
+      position: relative;
+      margin-left: 10px;
+      &::before {
+        content: "";
+        position: absolute;
+        width: 5px;
+        height: 5px;
+        background: #BD2333;
+        top: 50%;
+        transform: translateY(-50%);
+        left: -10px;
+        border-radius: 100%;
+      }
+    }
+  }
+
+  &__inner-list {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 6px;
+  }
+
+  &__inner-divider {
+    width: 55px;
+    height: 2px;
+    background: #000000;
+    margin: 0 auto;
+  }
+
+  &__inner-bigtitle {
+    margin-bottom: 10px;
+    font-family : Yeseva One;
+    font-size : 18px;
+    line-height : 14.58px;
+    color : #000000;
+  }
+
+
+  &__inner-btn {
+    width: 87px;
+    height: 25px;
+    margin: 0 auto;
+  }
+
+}
+
+@media (max-width: 764px) {
+  .kinezio-choose {
+    height: auto;
+    padding-bottom: 30px;
+    
+    &__title {
+      text-align: center;
+      font-size : 16px;
+      line-height : 18px;
+    }
+
+    &__inner {
+      margin-top: 20px;
+      display: block;
+    }
+
+    &__inner-item {
+      border-right: none;
+    }
+  }
+}

@@ -1,0 +1,105 @@
+.map {
+  max-width: 1400px;
+  margin: 0 auto;
+  background: #FFFFFF;
+
+  &__container {
+    padding: 92px 32px 51px 125px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    // gap: 50px;
+  }
+
+  &__content {
+    max-width: 328px;
+  }
+
+  &__title {
+    max-width: 328px;
+    font-family : Yeseva One;
+    font-size : 32px;
+    color : #BD2333;
+  }
+
+  &__contacts {
+    margin-top: 29px;
+    display: flex;
+    flex-flow: column;
+    gap: 13px;
+  }
+
+  &__contacts-title {
+    font-family : Yeseva One;
+    font-size : 26px;
+    color : #333333;
+  }
+
+  &__contacts-text {
+    font-size : 13px;
+    color : #333333;
+  }
+  
+  &__contacts-link {
+    font-family : Montserrat;
+    font-size : 18px;
+    color : #333333;
+    text-decoration: none;
+  }
+
+  &__contacts-about {
+    margin-top: 32px;
+    display: flex;
+    flex-flow: column;
+    gap: 8px;
+  }
+
+  &__image {
+    
+  }
+
+  &__img {
+    width: 838px;
+    height: 360px;
+  }
+}
+
+@media (max-width: 960px) {
+  .map {
+
+    &__container {
+      padding: 30px 50px 33px 57px;
+    }
+
+    &__title {
+      font-size : 28px;
+      line-height : 32px;
+    }
+
+    &__contacts {
+      width: 152px;
+    }
+
+    &__contacts-title {
+      font-size: 18px;
+    }
+
+    &__contacts-text {
+      font-size: 12px;
+    }
+
+    &__contacts-about {
+      width: 189px;
+    }
+
+    &__contacts-link {
+      text-decoration: underline;
+    }
+  }
+}
+
+@media (max-width: 764px) {
+  .map {
+    display: none;
+  }
+}

@@ -1,0 +1,138 @@
+.insoles-problems {
+  height: 326px;
+  background: #F2F2F2;
+  padding-top: 51px;
+  overflow-x: hidden;
+
+  &__divider {
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    top: 59%;
+    width: 100%;
+    height: 2px;
+    background: #333333;
+
+    &--mobile {
+      display: none;
+    }
+  }
+
+  &__title {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &__inner {
+    position: relative;
+    margin: 0 auto;
+    margin-top: 55px;
+    max-width: 860px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    // &::before {
+    //   z-index: -1;
+    //   content: "";
+    //   width: 1500px;
+    //   height: 2px;
+    //   background: black;
+    //   position: absolute;
+    //   top: 50%;
+    //   left: 50%;
+    //   transform: translate(-50%, -50%);
+    // }
+  }
+
+  &__item {
+    position: relative;
+    z-index: 99999;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 10px;
+    font-family: Montserrat;
+    font-size : 10px;
+    line-height : 12.38px;
+    color : #333333;
+  }
+
+  &__item-text {
+    max-width: 209px;
+    text-align: center;
+  }
+
+  &__img {
+    position: relative;
+    z-index: 10;
+    background: transparent;
+    
+    &--first {
+      width: 41px;
+    }
+
+    &--second {
+      width: 33px;
+    }
+
+    &--third {
+      width: 52px;
+    }
+    
+    &--four {
+      width: 55px;
+    }
+  }
+
+  &__item-bold {
+    font-family : Yeseva One;  
+  }
+}
+
+@media (max-width: 1064px) {
+  .insoles-problems {
+    padding-top: 50px;
+
+    &__title {
+      font-size : 28px;
+      line-height : 30px;
+    }
+  }
+}
+
+
+@media (max-width: 764px) {
+  .insoles-problems {
+    padding: 30px 0;
+    height: auto;
+
+    &__title {
+      max-width: 100%;
+      font-size : 15px;
+      line-height : 18px;
+    }
+
+    &__inner {
+      position: relative;
+      flex-flow: column;
+      gap: 30px;
+    }
+
+    &__divider {
+      transform: rotate(90deg);
+      top: 36%;
+      left: -30%;
+      width: 416px;
+
+      &--hidden {
+        display: none;
+      }
+
+      &--mobile {
+        display: block;
+      }
+    }
+  }
+}

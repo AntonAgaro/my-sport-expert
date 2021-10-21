@@ -1,0 +1,83 @@
+.kinezio-help {
+  height: 168px;
+  background: #333333;
+  padding-top: 37px;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+  &__descr {
+    max-width: 450px;
+  }
+
+  &__descr-title {
+    font-family : Yeseva One;
+    font-size : 16px;
+    line-height : 20.34px;
+    color : #FFFFFF;
+  }
+
+  &__descr-list {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 6px;
+    row-gap: 12px;
+  }
+
+  &__descr-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-family : Montserrat;
+    font-size : 10px;
+    line-height : 12.39px;
+    color : #FFFFFF;
+  }
+
+  &__descr-img {
+    width: 27px;
+  }
+
+  &__white-input {
+    background: transparent;
+    color : #FFFFFF;
+    border-color: #FFFFFF;
+    &::placeholder {
+      color : #FFFFFF;
+    }
+  }
+
+  &__white-form-text {
+    color : #FFFFFF;
+    text-align: right;
+  }
+}
+
+@media (max-width: 764px) {
+  .kinezio-help {
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 30px;
+
+    &__inner {
+      flex-flow: column;
+    }
+
+    &__descr-list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    &__form-inputs {
+      justify-content: flex-end;
+      gap: 16px;
+    }
+
+    &__btn-wrapper {
+      justify-content: flex-end;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.insoles-first__title {
+  line-height : 61.89px;
+  max-width: 803px;
+}
+
+.insoles-first__inner {
+  max-width: 803px;
+  padding-top: 200px;
+}
+
+@media (max-width: 1064px) {
+  .insoles-first__title {
+    max-width: 580px;
+    font-size : 50px;
+    line-height : 43.53px;
+  }
+}
+
+@media (max-width: 764px) {
+  .insoles-first__title {
+    max-width: 260px;
+    font-size : 27px;
+    line-height : 24.3px;
+  }
+}

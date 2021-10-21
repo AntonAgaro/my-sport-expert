@@ -1,0 +1,29 @@
+.white-reviews {
+  background: #FFFFFF;
+
+  &__title {
+    color : #333333;
+  }
+
+  &__item {
+    border-color: #333333;
+  }
+
+  &__divider {
+    background: #333333;
+  }
+}
+
+@media (max-width: 764px) {
+  .white-reviews {
+
+    &__container {
+      padding: 0;
+    }
+
+    &__title {
+      width: 100%;
+      text-align: center;
+    }
+  }
+}

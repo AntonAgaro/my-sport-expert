@@ -1,0 +1,303 @@
+.veloproblems {
+  width: 100%;
+  padding-top: 50px;
+
+  &--wattbike {
+    background: #F2F2F2;
+  }
+
+  &__title {
+    margin: 0 auto;
+    max-width: 800px;
+    text-align: center;
+    font-family : Yeseva One;
+    font-size : 29px;
+    line-height : 35.38px;
+    color : #000000;
+
+    &--wattbike {
+      max-width: 645px;
+    }
+  }
+
+  &__subtitle {
+    max-width: 549px;
+    margin: 0 auto;
+    font-family : Yeseva One;
+    font-size : 14px;
+    line-height : 18.97px;
+    color : #333333;
+  }
+
+  &__inner {
+    margin: 0 auto;
+    margin-top: 56px;
+    max-width: 835px;
+    display: flex;
+    gap: 110px;
+  }
+
+  &__images {
+    position: relative;
+  }
+
+  &__left {
+    position: absolute;
+    top: 31%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 12px;
+    cursor: pointer;
+  }
+
+  &__right {
+    position: absolute;
+    top: 28%;
+    right: 0;
+    width: 12px;
+    cursor: pointer;
+  }
+
+  &__inner-list {
+    display: flex;
+    flex-flow: column;
+    gap: 18px;
+
+    &--wattbike {
+      max-width: 361px;
+    }
+  }
+
+  &__inner-tabs {
+    display: none;
+
+    &--active {
+      display: flex;
+      transition: all 0.5s;
+      animation: moveFromRight 1s linear;
+    }
+  }
+
+  &__inner-item {
+    padding-bottom: 20px;
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+    border-bottom: 2px solid #CCCCCC;
+    &:last-child {
+      border-bottom: none;
+    }
+
+    &--mobile {
+      display: none;
+    }
+  }
+
+  &__inner-title {
+    font-family : Yeseva One;
+    font-size : 20px;
+    color : #000000;
+
+    &--red {
+      color : #B72024; 
+    }
+  }
+
+  &__inner-title-text {
+    position: relative;
+    font-family: 'Montserrat';
+    font-size: 13px;
+
+    &--light {
+      &::before {
+        position: absolute;
+        content: "";
+        width: 10px;
+        height: 17px;
+        top: 50%;
+        left: -18px;
+        transform: translateY(-50%);
+        background-image: url('../images/velo/red-light-icon.svg');
+      }
+    }
+
+    &--drop {
+      &::before {
+        position: absolute;
+        content: "";
+        width: 11px;
+        height: 16px;
+        top: 50%;
+        left: -18px;
+        transform: translateY(-50%);
+        background-image: url('../images/velo/red-drop-icon.svg');
+      }
+    }
+
+    &--time {
+      &::before {
+        position: absolute;
+        content: "";
+        width: 14px;
+        height: 14px;
+        top: 50%;
+        left: -18px;
+        transform: translateY(-50%);
+        background-image: url('../images/velo/red-time-icon.svg');
+      }
+    }
+
+    &--cross {
+      &::before {
+        position: absolute;
+        content: "";
+        width: 9px;
+        height: 9px;
+        top: 50%;
+        left: -18px;
+        transform: translateY(-50%);
+        background-image: url('../images/velo/red-cross-icon.svg');
+      }
+    }
+  }
+
+  &__point {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+
+    &--big {
+      width: 38px;
+      height: 38px;
+    }
+
+    &--first {
+      top: 8%;
+      right: 31%;
+    }
+
+    &--second  {
+      top: 19%;
+      right: 56%;
+    }
+
+    &--third {
+      top: 26%;
+      right: 64%;
+    }
+
+    &--four {
+      top: 35%;
+      right: 29%;
+    }
+
+    &--fifth {
+      top: 37%;
+      right: 36%;
+    }
+
+    &--six {
+      top: 49%;
+      right: 47%;
+    }
+  }
+}
+
+@media (max-width: 764px) {
+  .veloproblems {
+    padding-top: 25px;
+
+    &__title {
+      font-size : 16px;
+      line-height : 18px;
+    }
+
+    &__subtitle--wattbike {
+      text-align: center;
+    }
+
+    &__inner {
+      flex-flow: column;
+      gap: 10px;
+
+      &--wattbike {
+        margin-top: 10px;
+      }
+    }
+
+    &__inner-list {
+      flex-flow: row-reverse;
+
+      &--wattbike {
+        flex-flow: column;
+        align-items: center;
+        gap: 6px;
+      }
+    }
+
+    &__inner-item {
+
+      &--hidden {
+        display: none;
+      }
+
+      &--mobile {
+        display: flex;
+      }
+
+      &--wattbike {
+        max-width: 184px;
+        padding-bottom: 10px;
+        gap: 6px;
+        text-align: center;
+      }
+    }
+
+    &__inner-title {
+      font-size: 12px;
+    }
+
+    &__inner-title-text {
+      font-size: 9px;
+    }
+
+    &__point {
+      position: absolute;
+      width: 13px;
+      height: 13px;
+  
+      &--big {
+        width: 25px;
+        height: 25px;
+      }
+  
+      &--first {
+        top: 8%;
+        right: 31%;
+      }
+  
+      &--second  {
+        top: 20%;
+        right: 50%;
+      }
+  
+      &--third {
+        top: 31%;
+        right: 61%;
+      }
+  
+      &--four {
+        top: 44%;
+      }
+  
+      &--fifth {
+        top: 45%;
+      }
+  
+      &--six {
+        top: 58%;
+      }
+    }
+  }
+}

@@ -1,0 +1,273 @@
+.footer {
+  width: 100%;
+  min-height: 219px;
+  padding-top: 86px;
+  padding-bottom: 86px;
+  background: #333333;
+  // display: flex;
+  // flex-flow: column;
+  // align-items: center;
+  // justify-content: center;
+
+  &__container {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+    padding-left: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 117px;
+  }
+
+  &__logo {
+    position: absolute;
+    top: -43px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &__contacts {
+    padding-top: 5px;
+    display: flex;
+    flex-flow: column;
+    gap: 3px;
+    font-family : Yeseva One;
+    font-size : 10px;
+    color : #FFFFFF;
+  }
+
+  &__phone {
+    font-size : 17px;
+  }
+
+  &__contacts-text {
+    font-size: 10px;
+  }
+
+  &__list {
+    width: 619px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__list-link {
+    font-family : Yeseva One;
+    font-size : 14px;
+    color : #FFFFFF;
+  }
+
+  &__list-round {
+    font-size : 14px;
+    color : #FFFFFF;
+  }
+
+  &__social {
+    position: absolute;
+    top: -37px;
+    right: 10px;
+    display: flex;
+    flex-flow: column;
+    align-items: flex-end;
+    gap: 6px;
+  }
+
+  &__feather {
+    width: 22px;
+    height: 22px;
+  }
+
+  &__feather-img {
+    width: 100%;
+  }
+
+  &__social-text {
+    font-family : Yeseva One;
+    font-size : 12px;
+    color : #FFFFFF;
+  }
+
+  &__social-icons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 7px;
+  }
+
+  &__social-icon {
+    width: 16px;
+    height: 16px;
+  }
+
+  &__btn {
+    display: block;
+    margin: 0 auto;
+    margin-top: 12px;
+    width: 335px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: none;
+    background: #BD2333;
+    cursor: pointer;
+    font-family : Yeseva One;
+    font-size : 17px;
+    color : #FFFFFF;
+  }
+
+  &__links {
+    margin: 0 auto;
+    margin-top: 9px;
+    width: 430px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__link {
+    font-family : Yeseva One;
+    font-size : 8px;
+    color : #666666;
+  }
+
+  &__mobile-wrapper {
+    display: none;
+  }
+
+}
+
+@media (max-width: 960px) {
+  .footer {
+    height: 298px;
+
+    &__container {
+      width: 580px;
+      margin: 0 auto;
+      padding-left: 0;
+    }
+
+    &__contacts {
+      display: none;
+    }
+
+    &__social {
+      display: none;
+    }
+
+    &__btn {
+      margin-top: 28px;
+    }
+
+    &__links {
+      display: none;
+    }
+
+    &__mobile-wrapper {
+      margin: 0 auto;
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+    }
+
+    &__mobile-wrapper-item {
+      width: 225px;
+    }
+
+    &__mobile-start {
+      border-right: 2px solid #B3B3B3;
+      display: flex;
+      justify-content: flex-start;
+    }
+
+    &__mobile-container-start {
+      display: flex;
+      flex-flow: column;
+      align-items: flex-end;
+
+    }
+
+    &__mobile-phone {
+      width: 26px;
+      height: 26px;
+    }
+
+    &__mobile-end {
+      padding-right: 32px;
+      display: flex;
+      justify-content: flex-end;
+      gap: 8px;
+    }
+
+    &__mobile-container-end {
+      display: flex;
+      flex-flow: column;
+      align-items: flex-start;
+    }
+
+    &__phone {
+      margin-top: 12px;
+    }
+
+    &__phone-link {
+      font-family : Yeseva One;
+      font-size : 20px;
+      color : #FFFFFF;
+    }
+
+    &__mobile-contacts-text {
+      font-family : Yeseva One;
+      font-size : 11px;
+      color : #FFFFFF;
+    }
+
+    &__mobile-container-end {
+      gap: 8px;
+    }
+  }
+}
+
+@media (max-width: 764px) {
+  .footer {
+    height: 242px;
+
+    &__container {
+      width: 260px;
+      margin: 0 auto;
+      padding-left: 0;
+    }
+
+    &__mobile-wrapper {
+      padding: 0 30px;
+    }
+
+    &__mobile-end {
+      padding-right: 0;
+    }
+
+    &__mobile-container-end {
+      align-items: flex-end;
+    }
+
+    &__social-text {
+      font-size: 9px;
+    }
+
+    &__list {
+      display: none;
+    }
+
+    &__btn {
+      margin-top: 10px;
+      width: 240px;
+      height: 25px;
+      font-size : 12px;
+    }
+
+    &__phone-link {
+      font-size : 7px;
+    }
+  }
+}

@@ -1,0 +1,273 @@
+.indicators {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  padding-top: 47px;
+  overflow-x: hidden;
+  
+  &__images {
+    width: 453px;
+    height: 367px;
+    position: absolute;
+    top: 31px;
+    left: 211px;
+
+    &--mobile {
+      display: none;
+    }
+  }
+
+  &__forward-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &__left-img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  &__inner {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-end;
+  }
+
+  &__title {
+    max-width: 576px;
+    text-align: right;
+    font-family : Yeseva One;
+    font-size : 29px;
+    line-height : 35.38px;
+    color : #333333;
+  }
+
+  &__subtitle {
+    margin-top: 7px;
+    font-family : Yeseva One;
+    font-size : 14px;
+    line-height : 19.02px;
+    color : #333333;
+  }
+
+  &__divider {
+    margin-top: 23px;
+    width: 472px;
+    height: 2px;
+    background: #333333;
+  }
+
+  &__checks {
+    margin-top: 27px;
+    display: flex;
+    flex-flow: column;
+    gap: 14px;
+  }
+
+  &__checks-item {
+    text-align: right;
+  }
+
+  &__checks-text {
+    font-family : Montserrat;
+    font-size : 13px;
+    line-height : 21.98px;
+    color : #000000;
+  }
+
+  &__checks-input {
+    display: none;
+  }
+
+  .check-style {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border: 2px solid black;
+    border-radius: 100%;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .check-style::before  {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 6px;
+    height: 6px;
+    background-color: #BD2333;
+    border-radius: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: .2s;
+  }
+  
+  &__checks-input:checked + .check-style::before {
+    opacity: 1;
+  }
+
+  &__list {
+    width: 442px;
+    margin-top: 33px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  &__list-item {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 17px;
+  }
+
+  &__list-number {
+    font-family : Yeseva One;
+    font-size : 30px;
+    line-height : 23.57px;
+    color : #BD2333;
+  }
+
+  &__list-text {
+    font-family : Yeseva One;
+    font-size : 14px;
+    line-height : 19.02px;
+    color : #333333;
+  }
+}
+
+@media (max-width: 1064px) {
+  .indicators {
+    height: 510px;
+
+    &__images {
+      left: 30px;
+    }
+
+    &__left-img {
+      top: 10%;
+    }
+
+    &__title {
+      max-width: 390px;
+      font-size: 28px;
+    }
+
+    &__subtitle {
+      max-width: 340px;
+      font-size: 18px;
+    }
+
+    &__divider {
+      width: 343px;
+    }
+
+    &__checks {
+      margin-top: 60px;
+    }
+
+    &__list {
+      margin-top: 0;
+      position: absolute;
+      left: 30px;
+      bottom: 60px;
+    }
+  }
+}
+
+@media (max-width: 764px) {
+  .indicators {
+    height: unset;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    &__left-img {
+      width: 197px;
+    }
+
+    &__forward-img {
+      width: 78px;
+    }
+
+    &__images {
+      width: 260px;
+      height: 190px;
+
+      &--hidden {
+        display: none;
+      }
+
+      &--mobile {
+        display: block;
+        position: relative;
+        top: unset;
+        left: unset;
+      }
+    }
+
+    &__title {
+      max-width: 258px;
+      font-size : 16px;
+      line-height : 18px;
+    }
+
+    &__subtitle {
+      max-width: 196px;
+      text-align: right;
+      font-size : 9px;
+      line-height : 12px;
+    }
+
+    &__inner {
+      gap: 10px;
+    }
+
+    &__divider {
+      margin-top: 0;
+      width: 260px;
+    }
+
+    &__checks {
+      margin-top: 0;
+      flex-flow: row;
+    }
+
+    &__checks-label {
+      gap: 5px;
+      display: flex;
+      flex-flow: column-reverse;
+      align-items: center;
+    }
+
+    &__checks-text {
+      text-align: center;
+      font-size : 9px;
+      line-height : 10px;
+    }
+
+    &__list {
+      position: static;
+      width: auto;
+      gap: 5px;
+
+    }
+
+    &__list-item {
+      gap: 5px;
+    }
+
+    &__list-number {
+      font-size : 18px;
+      line-height : 23.57px;
+    }
+
+    &__list-text {
+      font-size : 9px;
+      line-height : 19.02px;
+    }
+  }
+}

@@ -1,0 +1,141 @@
+.video {
+  position: relative;
+  width: 100%;
+  height: 800px;
+  background: #333333;
+  overflow-x: hidden;
+
+  &__header {
+    height: 170px;
+    position: relative;
+    padding-top: 60px;
+  }
+
+  &__header-text {
+    max-width: 623px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &__header-title {
+    font-family : Yeseva One;
+    font-size : 28px;
+    line-height : 34.62px;
+    color : #FFFFFF;
+  }
+
+  &__header-descr {
+    margin-top: 12px;
+    font-family : Yeseva One;
+    font-size : 14px;
+    line-height : 19.02px;
+    color : #FFFFFF;
+  }
+
+  &__logo-img {
+    position: absolute;
+    top: 23%;
+    left: 8%;
+    width: 101px;
+    height: 56px;
+  }
+
+  &__header-contacts {
+    position: absolute;
+    top: 29%;
+    right: 2%;
+    display: flex;
+    flex-flow: column;
+    align-items: flex-end;
+    font-family : Yeseva One;
+    font-size : 10px;
+    line-height : 13.92px;
+    color : #FFFFFF;
+    gap: 4px;
+  }
+
+  &__header-phone-link {
+    font-size: 17px;
+    color : #FFFFFF;
+  }
+
+  &__wrapper {
+    position: relative;
+    height: 592px;
+    background: #000000;
+  }
+
+  &__inner {
+    padding-top: 40px;
+    max-width: 1050px;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  &__title {
+    width: 16px;
+    height: 505px;
+    font-family : Yeseva One;
+    font-size : 13px;
+    line-height : 16.59px;
+    letter-spacing : 2.6px;
+    text-transform : uppercase;
+    color : #FFFFFF;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    text-align: right;
+  }
+
+  &__wrapper-divider {
+    position: absolute;
+    top: -12%;
+    right: 2%;
+    width: 2px;
+    height: 503px;
+    background: #FFFFFF;
+  }
+
+  &__social {
+    position: absolute;
+    bottom: 7%;
+    right: 2%;
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+  }
+
+  &__social-img {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+@media (max-width: 1064px) {
+  .video {
+
+    &__header {
+      padding-top: 22px;
+    }
+
+    &__header-text {
+      max-width: 512px;
+    }
+
+    &__inner {
+      padding: 0 30px;
+      padding-top: 40px;
+    }
+
+    &__wrapper-divider {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 764px) {
+  .video {
+    display: none;
+  }
+}

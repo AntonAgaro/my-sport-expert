@@ -1,0 +1,85 @@
+.wattbike__point {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+
+  &--big {
+    width: 38px;
+    height: 38px;
+  }
+  
+  &--first {
+    top: 4%;
+    left: 10%;
+  }
+
+  &--second {
+    top: 5%;
+    right: 6%;
+  }
+
+  &--third {
+    top: 32%;
+    left: 24%;
+  }
+
+  &--four {
+    top: 61%;
+    left: 18%;
+  }
+
+  &--five {
+    top: 60%;
+    right: 30%;
+  }
+}
+
+.wattbike__accordeon-content-bold {
+  font-size: 13px;
+  font-family : Yeseva One;
+}
+
+.wattbike__inner-title-text {
+  position: relative;
+  margin-left: 20px;
+  &::before {
+    content: url("../images/wattbike/wattbike-cross.svg");
+    position: absolute;
+    top: 50%;
+    left: -20px;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+  }
+}
+
+.wattbike__accordeon-link {
+  color: #000000;
+}
+
+.wattbike__accordeon-content {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: opacity 0.5s, max-height 0.6s;
+}
+
+.wattbike__accordeon-content--active {
+  overflow: visible;
+  opacity: 1;
+}
+
+.wattbike-problems-images {
+  height: 368px;
+}
+
+.wattbike__accordeon-title {
+  cursor: pointer;
+}
+
+@media (max-width: 764px) {
+  .wattbike-problems-images {
+    height: 263px;
+  }
+}

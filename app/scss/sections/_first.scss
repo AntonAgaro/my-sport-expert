@@ -1,0 +1,108 @@
+.first {
+  // max-width: 1400px;
+  // margin: 0 auto;
+  width: 100%;
+  margin-top: 55px;
+  background-color: #FFFFFF;
+  height: 648px;
+  position: relative;
+  overflow-x: hidden;
+
+  &__img {
+    z-index: 1;
+    position: absolute;
+    top: 78px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    &--wattbike {
+      top: 0;
+    }
+  }
+
+  &__inner {
+    position: relative;
+    z-index: 10;
+    max-width: 640px;
+    margin: 0 auto;
+    padding-top: 184px;
+
+    &--kinezio {
+      padding-top: 142px;
+    }
+  }
+
+  &__title {
+    margin: 0 auto;
+    text-align: center;
+    font-family : Yeseva One;
+    font-size : 70px;
+    line-height : 91.29px;
+    color : #333333;
+  }
+
+  &__subtitle {
+    margin: 0 auto;
+    max-width: 514px;
+    text-align: center;
+    font-family : Yeseva One;
+    font-size : 43px;
+    line-height : 48.22px;
+    color : #333333;
+  }
+
+  &__inner-divider {
+    height: 4px;
+    width: 55px;
+    margin: 0 auto;
+    margin-top: 10px;
+    background-color: #333333;
+  }
+
+  &__descr {
+    margin: 0 auto;
+    margin-top: 14px;
+    max-width: 520px;
+    font-family : Montserrat;
+    font-size : 18px;
+    line-height : 23.45px;
+    color : #333333;
+    text-align: center;
+  }
+
+  &__red-text {
+    margin: 0 auto;
+    margin-top: 6px;
+    text-align: center;
+    font-family : Rosa Marena;
+    font-size : 58px;
+    line-height : 75.36px;
+    color : #BD2333;
+    color : #BD2333;
+  }
+
+}
+
+@media (max-width: 764px) {
+  .first {
+
+    &__title {
+      font-size: 35px;
+      line-height : 31.51px;
+    }
+
+    &__subtitle {
+      font-size : 21px;
+      line-height : 23.85px;
+    }
+
+    &__inner-divider {
+      font-size : 9px;
+      line-height : 11.86px;
+    }
+
+    &__red-text {
+      font-size: 28px;
+    }
+  }
+}

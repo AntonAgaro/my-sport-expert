@@ -1,0 +1,332 @@
+.company {
+  position: relative;
+  max-width: 1400px;
+  height: 615px;
+  margin: 0 auto;
+  padding-top: 60px;
+  display: flex;
+  gap: 170px;
+
+  &__container {
+    position: relative;
+    height: 514px;
+    max-width: 680px;
+  }
+
+  &__content {
+    margin-left: 200px;
+    max-width: 480px;
+  }
+
+  &__title {
+    font-family : Yeseva One;
+    font-size : 28px;
+    line-height : 34.41px;
+    color: #333333;
+  }
+
+  &__subtitle {
+    font-family : Yeseva One;
+    font-size : 28px;
+    line-height : 34.41px;
+    color : #BD2333;
+  }
+
+  &__text-wrapper {
+    max-width: 338px;
+    margin-top: 30px;
+    font-family : Montserrat;
+    font-size : 11px;
+    line-height : 12.38px;
+    color : #333333;
+  }
+
+  &__content-text {
+    margin-bottom: 14px;
+
+    &--second {
+      max-width: 303px;
+      margin-bottom: 28px;
+    }
+
+    &--third {
+      max-width: 220px;
+    }
+  }
+
+  &__content-title {
+    margin-top: 71px;
+    font-family : Yeseva One;
+    font-size : 26px;
+    line-height : 32.08px;
+    color : #333333;
+  }
+
+  &__content-white-text {
+    z-index: 10;
+    position: relative;
+    margin-top: 27px;
+    max-width: 190px;
+    font-family : Montserrat;
+    font-size : 10px;
+    line-height : 12.38px;
+    color : #FFFFFF;
+  }
+
+  &__img {
+    z-index: 10;
+    position: absolute;
+    bottom: 0;
+    right: -4px;
+  }
+
+  &__redblock {
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 680px;
+    height: 87px;
+    background: #BD2333;
+  }
+
+  &__form-wrapper {
+    max-width: 360px;
+    height: 514px;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-end;
+  }
+
+  &__form-title {
+    max-width: 340px;
+    text-align: right;
+    font-family : Yeseva One;
+    font-size : 21px;
+    line-height : 24.83px;
+    color : #BD2333;
+  }
+
+  &__form {
+    margin-top: 10px;
+  }
+
+  &__form-inputs {
+    display: flex;
+    justify-content: space-between;
+    // gap: 17px;
+  }
+
+  &__form-input {
+    max-width: 180px;
+    padding: 5px 2px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #333333;
+    font-family : Montserrat;
+    font-size : 13px;
+    line-height : 20.83px;
+    color : #333333;
+    cursor: pointer;
+
+    &::placeholder {
+      color : #333333;
+    }
+  }
+
+  &__btn-wrapper {
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__form-btn {
+    max-width: 217px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FFFFFF;
+    border: 2px solid #333333;
+    font-family : Yeseva One;
+    font-size : 11px;
+    color : #333333;
+    cursor: pointer;
+  }
+
+  &__form-text {
+    margin-top: 10px;
+    max-width: 330px;
+    text-align: right;
+    font-family : Montserrat;
+    font-size : 8px;
+    line-height : 11.55px;
+    color : #333333;
+  }
+
+  &__form-link {
+    color : #333333;
+  }
+}
+
+@media (max-width: 960px) {
+  .company {
+    height: 570px;
+    padding-top: 47px;
+    gap: 49px;
+
+    &__content {
+      margin-left: 62px;
+      max-width: 468px;
+    }
+
+    &__title {
+      width: 420px;
+    }
+
+    &__text-wrapper {
+      margin-top: 26px;
+      font-size: 12px;
+    }
+
+    &__content-text--second {
+      margin-bottom: 47px;
+    }
+
+    &__content-title {
+      margin-top: 19px;
+    }
+
+    &__content-white-text {
+      margin-top: 21px;
+      width: 222px;
+      font-size : 12px;
+      line-height : 16px;
+    }
+
+    &__redblock {
+      width: 521px;
+      bottom: 19px;
+    }
+
+    &__form-wrapper {
+      width: 326px;
+    }
+
+    &__form-title {
+      width: 286px;
+      margin-left: 23px;
+      font-size : 18px;
+      line-height : 21px;
+    }
+
+    &__form-text {
+      margin-bottom: 32px;
+    }
+
+    &__form-btn {
+      width: 230px;
+      max-width: 230px;
+    }
+  }
+}
+
+@media (max-width: 764px) {
+  .company {
+    height: 590px;
+    padding: 30px;
+    flex-flow: column;
+    gap: 20px;
+
+    &__container {
+      height: auto;
+    }
+
+    &__content {
+      margin-left: 0;
+    }
+
+    &__title {
+      max-width: 250px;
+      font-size: 16px;
+      line-height : 18px;
+    }
+
+    &__subtitle {
+      font-size: 16px;
+      line-height : 18px;
+    }
+
+    &__text-wrapper {
+      max-width: 264px;
+      font-size : 9px;
+      line-height : 12px;
+    }
+
+    &__content-text {
+      margin-bottom: 12px;
+      &--second {
+        margin-bottom: 12px;
+      }
+    }
+
+    &__content-title {
+      margin-top: 12px;
+      max-width: 84px;
+      font-size : 16px;
+      line-height : 18px;
+    }
+
+    &__redblock {
+      width: 291px;
+      height: 71px;
+      left: -30px;
+      bottom: -1px;
+    }
+
+    &__img {
+      width: 120px;
+    }
+
+    &__content-white-text {
+      max-width: 117px;
+      font-size : 9px;
+      line-height : 12px;
+      letter-spacing : -0.13px;
+    }
+
+    &__form-wrapper {
+      width: 100%;
+    }
+
+    &__form-title {
+      margin-left: 0;
+      width: auto;
+      font-size : 16px;
+      line-height : 18px;
+      text-align: left;
+    }
+
+    &__form-input {
+      max-width: 92px;
+    }
+
+    &__btn-wrapper {
+      justify-content: flex-start;
+    }
+
+    &__form-text {
+      margin-bottom: 0;
+      font-size : 6px;
+      line-height : 7.26px;
+      text-align: left;
+    }
+
+    &__form-link {
+      font-family: Montserrat-bold;
+      font-weight: bold;
+      text-decoration: underline;
+    }
+
+  }
+}

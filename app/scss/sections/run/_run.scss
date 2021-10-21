@@ -1,0 +1,138 @@
+.run {
+  width: 100%;
+  margin-top: 60px;
+  height: 645px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+
+  &__img {
+    position: absolute;
+    top: 36px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &__wrapper {
+    position: relative;
+    padding-top: 11px;
+    padding-left: 5px;
+    max-width: 540px;
+    height: 270px;
+  }
+
+  &__title {
+    text-align: center;
+    font-family : Yeseva One;
+    font-size : 70px;
+    line-height : 61.92px;
+    color : #333333;
+  }
+
+  &__divider {
+    margin: 0 auto;
+    margin-top: 10px;
+    height: 5px;
+    width: 57px;
+    background: #333333;
+  }
+
+  &__text {
+    margin-top: 13px;
+    text-align: center;
+    font-family : Montserrat;
+    font-size : 18px;
+    line-height : 23.31px;
+    color : #333333;
+  }
+
+  &__text-red {
+    position: absolute;
+    left: 12px;
+    bottom: 21px;
+    text-align: center;
+    font-family : Rosa Marena;
+    font-size : 57px;
+    line-height : 74.91px;
+    color : #BD2333;
+  }
+
+  &__social {
+    position: absolute;
+    bottom: 57px;
+    right: 74px;
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 960px) {
+  .run {
+    overflow-x: hidden;
+    height: 564px;
+    margin-top: 0;
+
+    &__img {
+      top: 21px;
+    }
+
+    &__wrapper {
+      padding-top: 62px;
+      padding-left: 0;
+      width: 540px;
+    }
+
+    &__title {
+      width: 311px;
+      margin: 0 auto;
+      font-size : 50px;
+      line-height : 43.53px;
+    }
+
+    &__divider {
+      height: 2px;
+      margin-top: 22px;
+    }
+
+    &__text {
+      margin-top: 9px;
+      font-size: 12px;
+    }
+
+    &__text-red {
+      font-size: 50px;
+      left: 50px;
+      bottom: 6px;
+    }
+
+    &__social {
+      bottom: 117px;
+      right: 56px;
+    }
+  }
+}
+
+@media (max-width: 764px) {
+  .run {
+
+    &__title {
+      font-size: 35px;
+    }
+
+    &__text {
+      font-size: 9px;
+    }
+
+    &__text-red {
+      font-size: 28px;
+    }
+
+    &__social {
+      gap: 16px;
+      bottom: 23px;
+      right: 14px;
+    }
+  }
+}

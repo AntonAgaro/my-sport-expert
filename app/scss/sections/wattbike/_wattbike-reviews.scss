@@ -1,0 +1,23 @@
+@media (max-width: 1064px) {
+  .wattbike-reviews {
+    padding-top: 68px;
+    height: 460px;
+  }
+}
+
+@media (max-width: 764px) {
+  .wattbike-reviews {
+    padding-top: unset;
+    padding: 30px;
+    height: auto;
+
+    &__container {
+      padding: 0;
+    }
+
+    &__title {
+      width: 100%;
+      text-align: center;
+    }
+  }
+}

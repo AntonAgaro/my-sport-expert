@@ -1,0 +1,254 @@
+.bio {
+  position: relative;
+  width: 100%;
+  height: 686px;
+  background: #333333;
+
+  &__wrapper {
+    max-width: 1050px;
+  }
+
+  &__subtitle {
+    max-width: 712px;
+    font-family : Yeseva One;
+    font-size : 20px;
+    line-height : 25.66px;
+    color : #FFFFFF;
+  }
+
+  &__title {
+    max-width: 727px;
+    font-family : Yeseva One;
+    font-size : 29px;
+    line-height : 35.17px;
+    color : #BD2333;
+  }
+
+  &__slider {
+    display: none;
+  }
+
+  &__list {
+    margin-top: 35px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 27px;
+    font-family : Montserrat;
+    color : #FFFFFF;
+  }
+
+  &__list-item {
+    max-width: 310px;
+    display: flex;
+    gap: 30px;
+  }
+
+
+  &__list-title {
+    max-width: 259px;
+    font-family : Yeseva One;
+    font-size : 17px;
+    line-height : 19.18px;
+    color : #FFFFFF;
+  }
+
+  &__list-text {
+    max-width: 285px;
+    margin-top: 8px;
+    font-size : 12px;
+    line-height : 16.85px;
+  }
+
+  &__sublist {
+    margin-top: 14px;
+    font-size : 11px;
+    display: flex;
+    flex-flow: column;
+  }
+
+  &__sublist-item {
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 30%;
+      left: -16px;
+      width: 5px;
+      height: 5px;
+      border-radius: 100%;
+      background: #BD2333;
+
+    }
+  }
+
+  &__divider {
+    img {
+      height: 100%;
+    }
+  }
+
+  &__bottom-title {
+    position: absolute;
+    bottom: 57px;
+    right: 205px;
+    font-family: Yeseva One;
+    font-size : 17px;
+    line-height : 20.49px;
+    letter-spacing : 1.7px;
+    text-transform : uppercase;
+    color : #FFFFFF;
+  }
+
+  &__mysport {
+    z-index: 30;
+    position: absolute;
+    left: 0;
+    bottom: -200px;
+    width: 539px;
+  }
+
+  &__mysport-svg {
+    &--active {
+      & .cls-1 {
+        opacity: 0.5;
+      }
+    }
+  }
+}
+
+@media (max-width: 960px) {
+  .bio {
+    padding-left: 60px;
+    padding-top: 66px;
+
+    &__subtitle {
+      max-width: 487px;
+      font-size : 18px;
+      line-height : 20px;
+    }
+  
+    &__title {
+      margin-top: 10px;
+      max-width: 498px;
+      font-size : 28px;
+      line-height : 30px;
+    }
+
+    &__list-item {
+      max-width: 254px;
+      gap: 10px;
+    }
+
+    &__list-title {
+      margin-right: 0;
+    }
+
+    &__bottom-title {
+      right: 57px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .bio {
+    
+
+    &__titles-wrapper {
+      display: flex;
+      flex-flow: column-reverse;
+
+    }
+
+    &__title {
+      font-size : 16px;
+      line-height : 18px;
+    }
+
+    &__subtitle {
+      font-size : 9px;
+      line-height : 10.08px;
+    }
+  }
+} 
+
+@media (max-width: 500px) {
+  .bio {
+    padding: 14px 30px;
+    height: 417px;
+    height: auto;
+
+    &__bottom-title {
+      display: none;
+    }
+
+    &__divider {
+      display: none;
+    }
+
+    &__list {
+      display: none;
+    }
+
+    &__list-item {
+      max-width: 100%;
+      width: 100%;
+    }
+
+    &__list-title {
+      font-size : 12px;
+      line-height : 13.07px;
+    }
+
+    &__list-text {
+      font-family : Montserrat;
+      font-size : 9px;
+      line-height : 11.48px;
+      color : #FFFFFF;
+    }
+
+
+    &__sublist-item {
+      margin-left: 20px;
+      font-family : Montserrat;
+      font-size : 9px;
+      line-height : 11.48px;
+      color : #FFFFFF;
+    }
+
+    &__slider {
+      position: relative;
+      display: block;
+      margin: 0 auto;
+      margin-top: 25px;
+      width: 250px;
+    }
+
+    &__slider-arrow {
+      width: 6px;
+      height: 12px;
+      cursor: pointer;
+    }
+
+    &__slider-prev {
+      position: absolute;
+      top: 50%;
+      left: -10%;
+      transform: translateY(-50%);
+      background: transparent;
+      border: none;
+      cursor: pointer;
+    }
+
+    &__slider-next {
+      position: absolute;
+      top: 50%;
+      right: -10%;
+      transform: translateY(-50%);
+      background: transparent;
+      border: none;
+      cursor: pointer;
+    }
+
+  }
+} 

@@ -1,0 +1,95 @@
+.kinezio-tabs {
+  height: 269px;
+  background: #F0F0F0;
+  padding-top: 55px;
+
+  &__title {
+    max-width: 731px;
+    margin: 0 auto;
+  }
+
+  &__inner {
+    margin: 0 auto;
+    margin-top: 32px;
+    max-width: 864px;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-family : Yeseva One;
+    font-size : 14px;
+    line-height : 18.92px;
+    color : #333333;
+  }
+
+  &__items-title {
+    position: relative;
+    cursor: pointer;
+    &:hover {
+      &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        width: 100%;
+        height: 2px;
+        background: #BD2333;
+      }
+    }
+
+    &--active {
+      &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        width: 100%;
+        height: 2px;
+        background: #BD2333;
+      }
+    }
+  }
+
+  &__items-list {
+    padding-top: 10px;
+    text-align: center;
+    font-family : Montserrat;
+    font-size : 10px;
+    line-height : 12.39px;
+
+  }
+}
+
+@media (max-width: 764px) {
+  .kinezio-tabs {
+    height: auto;
+    padding-top: 19px;
+    padding-bottom: 30px;
+
+    &__title {
+      text-align: center;
+      font-size : 16px;
+      line-height : 18px;
+    }
+
+    &__inner {
+      margin-top: 24px;
+      flex-flow: column;
+      gap: 10px;
+      align-items: center;
+    }
+
+    &__round {
+      display: none;
+    }
+
+    &__item {
+      width: 100%;
+      border-bottom: 1px solid #CCC;
+    }
+
+    &__items-title {
+      text-align: center;
+      font-size: 12px;
+    }
+  }
+}

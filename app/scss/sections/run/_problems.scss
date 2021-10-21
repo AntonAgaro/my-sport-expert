@@ -1,0 +1,417 @@
+.problems {
+  width: 100%;
+  padding-top: 45px;
+  height: 686px;
+  background: #F2F2F2;
+
+  &__title {
+    margin: 0 auto;
+    max-width: 538px;
+    text-align: center;
+    font-family : Yeseva One;
+    font-size : 29px;
+    color : #000000;
+  }
+
+  &__sportsmen {
+    flex-basis: 50%;
+    position: relative;
+    width: 410px;
+    height: 450px;
+  }
+
+  &__sportsmen-img {
+    width: 100%;
+  }
+
+  &__arrow-left {
+    position: absolute;
+    top: 128px;
+    left: 2px;
+  }
+
+  &__arrow-right {
+    position: absolute;
+    top: 128px;
+    right: 2px;
+  }
+
+  &__point {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+
+    &--active {
+      width: 60px;
+      height: 60px;
+    }
+
+    &--first {
+      top: 9px;
+      right: 106px;
+    }
+
+    &--second {
+      top: 54px;
+      right: 152px;
+    }
+
+    &--third {
+      top: 169px;
+      left: 100px;
+    }
+
+    &--fourth {
+      top: 186px;
+      right: 145px;
+    }
+
+    &--fifth {
+      bottom: 164px;
+      right: 175px;
+    }
+
+    &--six {
+      bottom: 122px;
+      right: 204px;
+    }
+
+    &--seven {
+      bottom: 147px;
+      left: 53px;
+    }
+  }
+
+  &__content {
+    max-width: 780px;
+    margin: 0 auto;
+    margin-top: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+  }
+
+  &__text {
+    flex-basis: 50%;
+    margin-top: 45px;
+    display: none;
+    flex-flow: column;
+    transition: all 0.5s;
+
+    &--active {
+      display: flex;
+      transition: all 0.5s;
+      animation: moveFromRight 1s linear;
+    }
+  }
+
+  &__text-item {
+    display: flex;
+    flex-flow: column;
+    gap: 8px;
+
+    &--mobile {
+      display: none;
+    }
+
+    &--second {
+      margin-top: 22px;
+    }
+
+    &--third {
+      margin-top: 34px;
+      padding-left: 17px;
+    }
+  }
+
+  &__text-title {
+    font-family : Yeseva One;
+    font-size : 20px;
+    color : #000000;
+
+    &--withpadding {
+      padding-left: 18px;
+    }
+  }
+
+  &__text-point {
+    display: flex;
+    gap: 8px;
+    font-family: 'Montserrat';
+    font-size: 13px;
+  }
+
+  &__text-point-img {
+    max-width: 13px;
+  }
+
+  &__text-divider {
+    margin-top: 20px;
+    max-width: 289px;
+    height: 2px;
+    background: #CCCCCC;
+  }
+
+  &__text-point-cross {
+    margin-top: 3px;
+    width: 12px;
+    height: 12px;
+  }
+}
+
+@media (max-width: 960px) {
+  .problems {
+    height: 567px;
+
+    &__title  {
+      font-size : 28px;
+      line-height : 30px;
+    }
+
+    &__content {
+      margin-top: 34px;
+      align-items: flex-start;
+    }
+
+    &__sportsmen {
+      width: 344px;
+      height: auto;
+      margin-left: 0;
+    }
+
+    &__point {
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      cursor: pointer;
+  
+      &--active {
+        width: 45px;
+        height: 45px;
+      }
+  
+      &--first {
+        top: 11px;
+        right: 93px;
+      }
+  
+      &--second {
+        top: 46px;
+        right: 128px;
+      }
+  
+      &--third {
+        top: 153px;
+        left: 97px;
+      }
+  
+      &--fourth {
+        top: 169px;
+        right: 149px;
+      }
+  
+      &--fifth {
+        bottom: 112px;
+        right: 174px;
+      }
+  
+      &--six {
+        bottom: 73px;
+        right: 206px;
+      }
+  
+      &--seven {
+        bottom: 99px;
+        left: 48px;
+      }
+    }
+
+    &__arrow-left {
+      width: 20px;
+      height: 20px;
+      top: 104px;
+      left: 17px;
+    }
+  
+    &__arrow-right {
+      width: 20px;
+      height: 20px;
+      top: 102px;
+      right: 11px;
+    }
+
+    &__text {
+      margin-top: 36px;
+    }
+
+    &__text-divider {
+      margin-top: 6px;
+    }
+
+    &__text-title--withpadding {
+      padding-left: 0;
+    }
+
+    &__text-item {
+      gap: 6px;
+    }
+
+    &__text-item--second {
+      margin-top: 14px;
+    }
+
+    &__text-item--third {
+      margin-top: 7px;
+      padding-left: 0;
+    }
+
+    &__text-title  {
+      font-size: 18px;
+    }
+
+    &__text-point {
+      font-size: 12px;
+    }
+
+    &__text-point-img {
+      width: 8px;
+      height: 12px;
+    }
+
+    &__text-point-cross {
+      width: 6px;
+      height: 6px;
+    }
+
+  }
+}
+
+@media (max-width: 764px) {
+  .problems {
+    padding-top: 15px;
+    min-height: 473px;
+    position: relative;
+    
+    &__title {
+      max-width: 267px;
+      font-size: 16px;
+      line-height : 18px;
+    }
+
+    &__sportsmen {
+      position: absolute;
+      top: 54px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 261px
+    }
+
+
+    &__content {
+      width: 260px;
+      padding-bottom: 30px;
+      margin-top: 0;
+      height: auto;
+      flex-flow: column;
+      gap: 10px;
+      align-items: center;
+    }
+
+    &__text-item {
+      max-width: 120px;
+      gap: 2px;
+
+
+      &--hidden {
+        display: none;
+      }
+
+      &--mobile {
+        display: flex;
+      }
+
+      &--second {
+        margin-top: 0;
+        padding-left: 10px;
+      }
+
+      &--second {
+        margin-top: 0;
+      }
+
+      &--third {
+        margin-top: 0;
+        border-right: 1px solid #ccc;
+      }
+    }
+
+    &__text-title {
+      font-size: 12px;
+    }
+
+    &__text-point {
+      font-size: 9px;
+    }
+
+    &__text {
+      flex-flow: row-reverse;
+    }
+
+    &__text-divider {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .problems {
+    &__point {
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+  
+      &--active {
+        width: 60px;
+        height: 60px;
+      }
+  
+      &--first {
+        top: 7px;
+        right: 65px;
+      }
+  
+      &--second {
+        top: 31px;
+        right: 84px;
+      }
+  
+      &--third {
+        top: 118px;
+        left: 69px;
+      }
+  
+      &--fourth {
+        top: 129px;
+        right: 101px;
+      }
+  
+      &--fifth {
+        bottom: 77px;
+        right: 123px;
+      }
+  
+      &--six {
+        bottom: 44px;
+        right: 150px;
+      }
+  
+      &--seven {
+        bottom: 61px;
+        left: 30px;
+      }
+    }
+  }
+}

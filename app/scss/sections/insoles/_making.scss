@@ -1,0 +1,179 @@
+.making {
+  padding-top: 16px;
+  padding-bottom: 36px;
+
+  &__title {
+    max-width: 700px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  &__tabs {
+    margin: 0 auto;
+    margin-top: 18px;
+    justify-content: center;
+  }
+
+  &__inner {
+    margin: 0 auto;
+    margin-top: 41px;
+    max-width: 730px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__inner-item {
+    position: relative;
+    max-width: 286px;
+    height: 610px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    gap: 30px;
+
+    &::after {
+      content: url("../images/insoles/red-divider.png");
+      position: absolute;
+      top: 50%;
+      right: -50px;
+      transform: translateY(-50%);
+    }
+
+    &:last-child {
+      &::after {
+        content: "";
+      }
+    }
+  }
+
+  &__inner-point {
+    position: relative;
+    z-index: 30;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+    justify-content: space-between;
+  }
+
+  &__point-number {
+    position: absolute;
+    z-index: -1;
+    top: -13%;
+    left: -16%;
+    width: 115px;
+  }
+
+  &__inner-item-title {
+    font-family : Yeseva One;
+    font-size : 17px;
+    line-height : 19.17px;
+    color : #333333;
+  }
+
+  &__inner-item-text {
+    font-family : Montserrat;
+    font-size : 10px;
+    line-height : 16.84px;
+    color : #333333;
+    display: flex;
+    flex-flow: column;
+    gap: 30px;
+  }
+
+  &__inner-item-time {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family : Montserrat;
+    font-size : 10px;
+    line-height : 16.84px;
+    color : #333333;
+  }
+
+  &__inner-item-img {
+    width: 20px;
+  }
+
+  &__inner-divider {
+    height: 591px;
+  }
+}
+
+@media (max-width: 764px) {
+  .making {
+    height: auto;
+
+    &__title {
+      font-size : 15px;
+      line-height : 18px;
+    }
+
+    &__inner {
+      max-width: 220px;
+    }
+
+    &__inner-item {
+      height: auto;
+      max-width: 220px;
+      &::after {
+        content: "";
+      }
+
+      &--one {
+        position: relative;
+        &::before {
+          content: url("../images/insoles/making/making-one.svg");
+          width: 57px;
+          position: absolute;
+          top: 0px;
+          left: 0px;
+        }
+      }
+    }
+
+    &__inner-point {
+
+      &--two {
+        position: relative;
+        &::before {
+          z-index: -1;
+          content: url("../images/insoles/making/making-two.svg");
+          width: 57px;
+          position: absolute;
+          top: 0px;
+          left: 0px;
+        }
+      }
+
+      &--three {
+        position: relative;
+        &::before {
+          z-index: -1;
+          content: url("../images/insoles/making/making-three.svg");
+          width: 57px;
+          position: absolute;
+          top: 0px;
+          left: 0px;
+        }
+      }
+    }
+
+    &__inner-item-title {
+      font-size : 12px;
+      line-height : 14px;
+    }
+
+    &__inner-item-text-p {
+      font-size : 9px;
+      line-height : 12px;
+    }
+
+    &__point-number {
+      display: none!important;
+    }
+
+
+  }
+}

@@ -1,0 +1,117 @@
+.garanty {
+  padding-top: 60px;
+  padding-bottom: 100px;
+
+  &__title {
+    margin: 0 auto;
+    max-width: 450px;
+    font-size: 29px;
+    text-align: center;
+  }
+  
+  &__inner {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__inner-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  &__inner-item-img {
+    width: 100px;
+
+    &--one {
+      width: 70px;
+    }
+  }
+
+  &__inner-item__text {
+    max-width: 240px;
+    font-family : Yeseva One;
+    font-size : 17px;
+    line-height : 19.17px;
+    color : #333333;
+  }
+}
+
+@media (max-width: 764px) {
+  .garanty {
+    padding-top: 18px;
+
+    &__inner {
+      flex-flow: column;
+      gap: 30px;
+    }
+
+    &__inner-item {
+      flex-flow: column;
+      align-items: center;
+    }
+
+    &__inner-item__text {
+      text-align: center;
+      font-size : 12px;
+      line-height : 13.3px;
+    }
+  }
+}
+
+.path-one {
+  stroke: #be2433;
+  stroke-dasharray: 873;
+}
+
+.path-two {
+  stroke: #be2433;
+  stroke-dasharray: 1496;
+}
+
+.path-three {
+  stroke: #be2433;
+  stroke-dasharray: 1484;
+}
+
+.animated-num-one {
+  animation: numberOne 5s linear;
+}
+
+.animated-num-two {
+  animation: numberTwo 5s linear;
+}
+
+.animated-num-three {
+  animation: numberThree 5s linear;
+}
+
+@keyframes numberOne {
+  from {
+    stroke-dashoffset: 873;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes numberTwo {
+  from {
+    stroke-dashoffset: 1496;
+  }
+
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes numberThree {
+  from {
+    stroke-dashoffset: 1484;
+  }
+
+  to {
+    stroke-dashoffset: 0;
+  }
+}

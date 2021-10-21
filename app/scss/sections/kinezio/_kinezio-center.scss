@@ -1,0 +1,149 @@
+.kinezio-center {
+  position: relative;
+  height: 575px;
+  padding-top: 54px;
+
+  &__title {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    font-size : 32px;
+    line-height : 39.54px;
+  }
+
+  &__inner {
+    margin-top: 17px;
+  }
+
+  &__tabs {
+    max-width: 451px;
+    margin: 0 auto;
+  }
+
+  &__slider-wrapper {
+    margin: 0 auto;
+    margin-top: 60px;
+    max-width: 800px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__slider-arrow {
+    width: 11px;
+    cursor: pointer;
+  }
+
+  &__slider {
+    max-width: 646px;
+  }
+
+  &__slide {
+    display: flex!important;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  &__slide-image {
+    flex-basis: 50%;
+  }
+
+  &__slide-descr {
+    flex-basis: 50%;
+  }
+
+  &__slide-descr-title {
+    font-family : Yeseva One;
+    font-size : 14px;
+    line-height : 18.32px;
+    color : #333333;
+  }
+
+  &__slide-descr-text {
+    margin-top: 28px;
+    font-family : Montserrat;
+    font-size : 10px;
+    line-height : 16.86px;
+    color : #333333;
+
+    &--round {
+      position: relative;
+      margin-left: 10px;
+      margin-top: 0;
+      &::before {
+        content: "";
+        position: absolute;
+        width: 5px;
+        height: 5px;
+        background: #BD2333;
+        top: 15%;
+        left: -10px;
+        border-radius: 100%;
+      }
+    }
+  }
+
+}
+
+@media (max-width: 764px) {
+  .kinezio-center {
+    height: auto;
+    padding: 30px 0;
+
+
+    &__title {
+      font-size : 16px;
+      line-height : 18px;
+    }
+
+    &__inner {
+      margin-top: 10px;
+    }
+
+    &__slider {
+      max-width: 100%;
+    }
+
+    &__slider-wrapper {
+      margin-top: 30px;
+    }
+
+    &__slide {
+      text-align: center;
+      flex-flow: column;
+      align-items: center;
+    }
+
+    &__slide-descr-title {
+      text-align: center;
+      font-size: 12px;
+    }
+
+    &__slide-descr-text {
+      margin-top: 10px;
+      font-size: 9px;
+      line-height : 12px;
+    }
+
+    &__slide-descr-text {
+      margin-top: 0;
+    }
+
+    &__tabs {
+      flex-flow: row;
+    }
+
+    &__tabs-item {
+      border-bottom: none;
+    }
+
+    &__items-title {
+      font-size : 8px;
+      line-height : 7.3px;
+    }
+
+    &__round {
+      display: block;
+    }
+  } 
+}

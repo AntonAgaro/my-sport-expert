@@ -1,0 +1,79 @@
+.mysport {
+  z-index: -1;
+  position: absolute;
+  top: -20%;
+  left: 0;
+
+  &--run-company {
+    right: 0;
+    left: unset;
+    top: 10%;
+  }
+
+  &--mistakes {
+    z-index: 0;
+    right: 0;
+    left: unset;
+  }
+
+  &--velo-specialist {
+    z-index: 0;
+    right: 0;
+    left: unset;
+    top: 50px;
+  }
+
+  &--trener {
+    z-index: 0;
+    left: 0;
+    right: unset;
+    top: unset;
+    bottom: -150px;
+  }
+
+  &--kinezio-center {
+    z-index: 0;
+    top: unset;
+    bottom: -100px;
+    left: 0;
+    right: unset;
+  }
+
+  &--psy-person {
+    z-index: 0;
+    top: 0;
+    right: 0;
+    left: unset;
+    bottom: unset;
+  }
+
+  &--insoles-mistakes {
+    z-index: 0;
+    top: 0;
+    right: 0;
+    left: unset;
+    bottom: unset;
+  }
+}
+
+.mse {
+  // width: 538px;
+  // height: 218px;
+  width: 554px;
+  height: 313px;
+
+  &--mistakes {
+    width: 554px;
+    height: 313px;
+  }
+}
+
+.mse-part {
+  transition: all 1s;
+}
+
+@media (max-width: 764px) {
+  .mysport {
+    display: none;
+  }
+}

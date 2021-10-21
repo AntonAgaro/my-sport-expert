@@ -1,0 +1,342 @@
+.specialist {
+  position: relative;
+  max-width: 1400px;
+  margin: 0 auto;
+  height: 622px;
+  padding-top: 28px;
+
+  &__inner {
+    display: flex;
+    gap: 170px;
+  }
+
+  &__content {
+    position: relative;
+    max-width: 550px;
+    height: 541px;
+  }
+
+  &__title {
+    font-family : Yeseva One;
+    font-size : 28px;
+    line-height : 34.62px;
+    color: #333333;
+  }
+
+  &__subtitle {
+    font-family : Yeseva One;
+    font-size : 28px;
+    line-height : 34.62px;
+    color : #BD2333;
+  }
+
+  &__text-block {
+    margin-top: 29px;
+    max-width: 336px;
+    display: flex;
+    flex-flow: column;
+    gap: 16px;
+    font-family : Montserrat;
+    font-size : 10px;
+    line-height : 12.46px;
+    color : #333333;
+  }
+
+  &__text {
+
+    &--small {
+      max-width: 296px;
+    }
+  }
+
+  &__about {
+    margin-top: 42px;
+    font-family : Yeseva One;
+    font-size : 14px;
+    line-height : 17.08px;
+    color : #333333;
+
+    &--mobile {
+      display: none;
+    }
+  }
+
+  &__name {
+    font-size: 26px;
+  }
+
+
+  &__job {
+    margin-top: 10px;
+  }
+
+  &__achievs {
+    max-width: 206px;
+    position: relative;
+    z-index: 10;
+    margin-top: 29px;
+    display: flex;
+    flex-flow: column;
+    gap: 8px;
+
+    &--mobile {
+      display: none;
+    }
+  }
+
+  &__achievs-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 6px;
+  }
+
+  &__achievs-logo {
+    width: 20px;
+  }
+
+  &__achievs-text {
+    font-family : Montserrat;
+    font-size : 10px;
+    line-height : 12.46px;
+    color : #FFFFFF;
+  }
+
+  &__content-photo {
+    position: absolute;
+    bottom: 0;
+    right: -32px;
+  }
+
+  &__red-block {
+    z-index: 1;
+    width: 691px;
+    height: 88px;
+    position: absolute;
+    left: 0;
+    bottom: 52px;
+    background: #BD2333;
+  }
+
+  &__form-wrapper {
+    max-width: 341px;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  &__form-title {
+    font-family : Yeseva One;
+    font-size : 21px;
+    line-height : 24.98px;
+    color : #BD2333;
+  }
+
+  &__form-inputs {
+    margin-top: 22px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__form-input {
+    width: 164px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #333333;
+    font-family : Montserrat;
+    font-size : 13px;
+    line-height : 20.96px;
+    color : #333333;
+    outline: none;
+    &::placeholder {
+      font-family : Montserrat;
+      font-size : 13px;
+      line-height : 20.96px;
+      color : #333333;
+    }
+  }
+
+  &__form-btn {
+    margin-right: 0;
+    margin-left: auto;
+    margin-top: 12px;
+    width: 217px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #333333;
+    background: transparent;
+    font-family : Yeseva One;
+    font-size : 11px;
+    line-height : 13.18px;
+    color : #333333;
+    cursor: pointer;
+  }
+
+  &__form-text {
+    margin-top: 13px;
+    text-align: right;
+    font-family : Montserrat;
+    font-size : 8px;
+    line-height : 11.62px;
+    color : #333333;
+  }
+
+  &__form-link {
+    color : #333333;
+  }
+}
+
+@media (max-width: 1064px) {
+  .specialist {
+
+    &__title {
+      max-width: 550px;
+    }
+
+    &__inner {
+      gap: 0;
+    }
+
+    &__content-photo {
+      max-width: 328px;
+      z-index: 10;
+    }
+
+    &__red-block {
+      width: 521px;
+    }
+  }
+}
+
+@media (max-width: 764px) {
+  .specialist {
+
+    &__inner {
+      flex-flow: column;
+      gap: 0;
+    }
+
+    &__content {
+      height: 445px;
+    }
+
+    &__title {
+      max-width: 253px;
+      font-size : 16px;
+      line-height : 18px;
+    }
+
+    &__subtitle {
+      display: inline-block;
+      font-size : 16px;
+      line-height : 18px;
+    }
+
+    &__text-block {
+      margin-top: 10px;
+      font-size : 9px;
+      line-height : 12px;
+      gap: 6px;
+    }
+
+    &__content-photo {
+      max-width: 239px;
+      bottom: 8px;
+      right: -77px;
+    }
+
+    &__text--small {
+      max-width: 160px;
+    }
+
+    &__text--hidden {
+      display: none;
+    }
+
+    &__about {
+      margin-top: 20px;
+
+      &--hidden {
+        display: none;
+      }
+
+      &--mobile {
+        margin-top: 20px;
+        position: relative;
+        z-index: 100;
+        display: block;
+        color : #FFFFFF;
+      }
+    }
+
+    &__name {
+      font-size : 16px;
+      line-height : 14px;
+    }
+
+    &__job {
+      margin-top: 2px;
+      font-size : 9px;
+      line-height : 14px;
+    }
+
+    &__achievs {
+      margin-top: 10px;
+      &--hidden {
+        display: none;
+      }
+
+      &--mobile {
+        display: flex;
+      }
+    }
+
+    &__achievs-text {
+      max-width: 130px;
+      font-size : 9px;
+      line-height : 12px;
+      color : #333333;
+    }
+
+    &__red-block {
+      height: 52px;
+      width: 291px;
+      bottom: 157px;
+    }
+
+    &__form-title {
+      font-size : 16px;
+      line-height : 18px;
+    }
+
+    &__form-inputs {
+      margin-top: 10px;
+      justify-content: flex-start;
+      gap: 30px;
+    }
+
+    &__form-input {
+      width: 92px;
+      font-size : 9px;
+    }
+
+    &__form-btn {
+      margin-left: 0;
+      margin-right: auto;
+      width: 175px;
+      font-size : 9px;
+    }
+
+    &__form-text {
+      margin-top: 6px;
+      margin-left: 0;
+      margin-right: auto;
+      max-width: 171px;
+      font-size : 6px;
+      line-height : 7.26px;
+      text-align: left;
+    }
+  }
+}

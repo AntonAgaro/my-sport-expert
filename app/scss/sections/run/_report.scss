@@ -1,0 +1,297 @@
+.report {
+  position: relative;
+  height: 450px;
+  margin: 0 auto;
+ 
+  background: #F2F2F2;
+
+  &--wattbike {
+    background: #FFFFFF;
+  }
+
+  &__images {
+    position: absolute;
+    top: 39px;
+    left: 199px;
+  }
+
+  &__red-round {
+    position: absolute;
+    right: -91px;
+    top: 36%;
+      img {
+        animation: rotating 5s linear infinite;
+      }
+      
+
+  }
+
+  &__red-round-text {
+    position: absolute;
+    top: 44px;
+    left: 28px;
+    width: 71px;
+    height: 54px;
+    text-align: center;
+    font-family : Yeseva One;
+    font-size : 14px;
+    line-height : 18.91px;
+    color : #FFFFFF;
+    cursor: pointer;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__list {
+    margin-top: 11px;
+    margin-right: -45px;
+    display: flex;
+    flex-flow: column;
+    gap: 2px;
+
+    &--wattbike {
+      margin-right: 0;
+      gap: 10px;
+    }
+  }
+
+  &__title {
+    max-width: 501px;
+    font-family : Yeseva One;
+    font-size : 29px;
+    line-height : 35.17px;
+    color : #333333;
+    text-align: right;
+  }
+
+  &__subtitle {
+    text-align: right;
+    font-family : Yeseva One;
+    font-size : 14px;
+    line-height : 18.97px;
+    color : #333333;
+  }
+
+  &__list-item {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 16px;
+  }
+
+  &__list-text {
+    max-width: 400px;
+    text-align: right;
+    font-family : Yeseva One;
+    font-size : 14px;
+    line-height : 14.57px;
+    color : #333333;
+  }
+
+  &__list-text-round {
+    max-width: 281px;
+    position: relative;
+    text-align: right;
+    font-family : Montserrat;
+    font-size : 10px;
+    line-height : 12.42px;
+    color : #333333;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: -10px;
+      width: 5px;
+      height: 5px;
+      background: #BD2333;
+      border-radius: 100%;
+    }
+  }
+
+  &__btn {
+    width: 234px;
+    height: 33px;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background: #BD2333;
+    font-family : Yeseva One;
+    font-size : 14px;
+    line-height : 18.97px;
+    color : #FFFFFF;
+  }
+
+  &__link {
+    max-width: 197px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: 0;
+    display: block;
+    text-align: right;
+    font-family : Montserrat;
+    font-size : 8px;
+    line-height : 11.59px;
+    color : #333333;
+  }
+}
+
+@media (max-width: 960px) {
+  .report {
+    height: 517px;
+    padding-right: 60px;
+    padding-top: 87px;
+
+    &__images {
+      top: 65px;
+      left: 56px;
+    }
+
+    &__red-round {
+      right: -107px;
+      top: 34%;
+      img {
+        width: 150px;
+        height: 150px;
+      }
+    }
+
+    &__red-round-text {
+      position: absolute;
+      top: 53px;
+      left: 31px;
+      width: 90px;
+      text-align: center;
+      font-size : 18px;
+    }
+
+    &__list {
+      gap: 29px;
+    }
+
+    &__title {
+      font-size: 28px;
+    }
+
+    &__list-text {
+      width: 362px;
+      text-align: right;
+      font-size: 18px;
+      line-height : 20px;
+    }
+
+  }
+}
+
+@media (max-width: 767px) {
+  .report {
+    padding: 0;
+    height: 650px;
+    &__images {
+      position: relative;
+      top: unset;
+      left: unset;
+      margin: 0 auto;
+      display: flex;
+      align-items: start;
+      justify-content: center;
+    }
+
+    &__img {
+      width: 192px;
+      height: 268px;
+    }
+
+    &__red-round {
+      right: 0px;
+      top: 65px;
+      img {
+        width: 72px;
+        height: 72px;
+      }
+    }
+
+    &__red-round-text {
+      top: 20px;
+      left: 14px;
+      font-size : 9px;
+      line-height : 12.23px;
+      width: 45px;
+    }
+
+    &__title {
+      margin: 0 auto;
+      margin-top: 24px;
+      width: 180px;
+      text-align: center;
+      font-size : 16px;
+      line-height : 18px;
+    }
+
+    &__list-text {
+      font-size : 9px;
+      line-height : 11.48px;
+      text-align: center;
+    }
+
+    &__list {
+      margin: 0 auto;
+      margin-top: 12px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+
+      &--wattbike {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+      }
+    }
+
+    &__list-item {
+      gap: 10px;
+      flex-flow: column-reverse;
+    }
+
+    &__list-text {
+      width: auto;
+    }
+
+    &__list-text-round--wattbike {
+      max-width: 174px;
+      text-align: center;
+  
+      &::after {
+        top: -5px;
+        left: 50%;
+        right: unset;
+        transform: translateX(-50%);
+        width: 5px;
+        height: 5px;
+        background: #BD2333;
+        border-radius: 100%;
+      }
+    }
+
+    &__btn--wattbike {
+      margin: 0 auto;
+      margin-top: 10px;
+    }
+
+    &__link--wattbike {
+      margin: 0 auto;
+      margin-top: 10px;
+      text-align: center;
+    }
+  }
+}

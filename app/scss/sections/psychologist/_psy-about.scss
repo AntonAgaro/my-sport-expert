@@ -1,0 +1,150 @@
+.psy-about {
+  height: 778px;
+  background: #F2F2F2;
+  padding-top: 117px;
+
+  &__inner {
+    width: 1284px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__inner-item {
+    position: relative;
+    width: 222px;
+    height: 510px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+
+    &:last-child {
+      justify-content: flex-start;
+      gap: 20px;
+      &::after {
+        content: "";
+      }
+    }
+
+    &::after {
+      content: url("../images/psychologist/red-divider.png");
+      display: block;
+      height: 402px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: -20px;
+    }
+  }
+
+  &__title {
+    font-family : Yeseva One;
+    font-size : 15px;
+    line-height : 16.79px;
+    color : #333333;
+  }
+
+  &__text {
+    font-family : Montserrat;
+    font-size : 10px;
+    line-height : 13.87px;
+    color : #333333;
+
+    &--round {
+      display: block;
+      clear: both;
+      float: left;
+      position: relative;
+      margin-left: 10px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 5px;
+        height: 5px;
+        background: #BD2333;
+        top: 50%;
+        transform: translateY(-50%);
+        left: -10px;
+        border-radius: 100%;
+      }
+    }
+  }
+
+  &__btn {
+    width: 62px;
+    height: 18px;
+    font-size : 8px;
+
+  }
+}
+
+@media (max-width: 1064px) {
+  .psy-about {
+    padding: 67px 60px 0 60px;
+    height: 676px;
+
+    &__inner {
+      width: 100%;
+      overflow-x: hidden;
+    }
+
+    &__inner-item--hidden {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 764px) {
+  .psy-about {
+    height: 554px;
+    padding: 63px 30px 0 30px;
+
+    &__inner {
+      width: 100%;
+      display: block;
+      overflow-x: unset;
+    }
+
+    &__inner-item--hidden {
+      display: flex;
+    }
+
+    &__inner-item {
+      height: auto;
+      gap: 20px;
+      display: flex!important;
+
+      &::after {
+        content: "";
+      }
+    }
+
+    &__pagination {
+      position: absolute;
+      top: -30px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex!important;
+      gap: 5px;
+
+      button {
+        font-size: 0;
+        padding: 0;
+      }
+
+      li {
+        width: 5px;
+        height: 6px;
+        background: #333333;
+        border-radius: 100%;
+      }
+
+      li.slick-active {
+        background: #BD2333;
+      }
+    }
+
+  }
+}

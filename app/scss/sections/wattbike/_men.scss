@@ -1,0 +1,91 @@
+.men {
+  max-width: 1400px;
+  margin: 0 auto;
+  height: 642px;
+  padding-top: 46px;
+
+  &__title {
+    max-width: 367px;
+    height: 67px;
+    margin: 0 auto;
+    text-align: center;
+    font-family : Yeseva One;
+    font-size : 29px;
+    line-height : 35.27px;
+    color : #333333;
+  }
+
+  &__inner {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__inner-item {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &_inner-item-title {
+    font-family : Yeseva One;
+    font-size : 20px;
+    line-height : 20.62px;
+    color : #333333;
+  }
+
+  &__inner-item-text {
+    max-width: 280px;
+    text-align: center;
+    font-family : Montserrat;
+    font-size : 10px;
+    line-height : 13.17px;
+    color : #333333;
+  }
+
+  &__inner-item-red {
+    max-width: 181px;
+    text-align: center;
+    font-family : Yeseva One;
+    font-size : 9px;
+    line-height : 10.96px;
+    color : #B72024;
+  }
+}
+
+@media (max-width: 1064px) {
+  .men {
+    padding-top: 40px;
+
+    &__title {
+      max-width: 360px;
+      font-size : 28px;
+      line-height : 30px;
+    }
+  }
+}
+
+@media (max-width: 764px) {
+  .men {
+    padding-top: 10px;
+    height: 473px;
+
+    &__title {
+      margin: 0 auto;
+      max-width: 210px;
+      font-size : 16px;
+      line-height : 18px;
+    }
+
+    &__inner {
+      margin-top: 0px;
+      display: block;
+    }
+
+    &__inner-item {
+      padding-top: 70px;
+      display: flex!important;
+    }
+  }
+}

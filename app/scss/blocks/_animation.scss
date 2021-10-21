@@ -1,0 +1,83 @@
+@keyframes rotating {
+  from {
+    transform: rotate(0deg);
+  } 
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes moveFromRight {
+  from {
+    transform: translateX(1000px);
+  } 
+  to {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes moveFromRightTranslate {
+  from {
+    transform: translate(1000px, -50%);
+  } 
+  to {
+    transform: translate(0px, -50%);
+  }
+}
+
+
+@keyframes moveFromLeft {
+  from {
+    transform: translate(-1000px, -50%);
+  } 
+  to {
+    transform: translate(0px, -50%);
+  }
+}
+
+@keyframes moveRight {
+  from {
+    transform: right(1000px);
+  } 
+  to {
+    transform: right(0px);
+  }
+}
+
+@keyframes moveToLeft {
+  from {
+    transform: translateX(0);
+  } 
+  to {
+    transform: translateX(-200px);
+  }
+}
+
+@keyframes toVisible {
+  from {
+    opacity: 0;
+  } 
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes toHidden {
+  from {
+    opacity: 1;
+  } 
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes inst {
+  from {
+    width: 34px;
+    height: 34px;
+  }
+  to {
+    width: 40px;
+    height: 40px;
+  }
+}

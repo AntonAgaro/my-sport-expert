@@ -1,0 +1,165 @@
+.insoles-choose {
+  height: 583px;
+  padding-top: 40px;
+  background: #333333;
+
+  &__title {
+    margin: 0 auto;
+    max-width: 900px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+
+  &__inner {
+    position: relative;
+    margin: 0 auto;
+    max-width: 822px;
+    margin-top: 72px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__slider-arrow {
+    width: 12px;
+  }
+
+  &__slider-prev {
+    position: absolute;
+    top: 50%;
+    left: -30px;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  &__slider-next {
+    position: absolute;
+    top: 50%;
+    right: -30px;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  &__inner-points {
+    position: absolute;
+    display: flex;
+    gap: 10px;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+
+    button {
+      display: none;
+      font-size: 0;
+      padding: 0;
+    }
+
+    li {
+      width: 10px;
+      height: 10px;
+      background: #FFFFFF;
+      border-radius: 100%;
+    }
+
+    li.slick-active {
+      background: #BD2333;
+    }
+  }
+
+
+  &__slider {
+    max-width: 610px;
+  }
+
+  &__slide {
+    display: flex!important;
+    align-items: flex-end;
+    gap: 20px;
+  }
+
+  &__slide-images {
+    position: relative;
+    flex-basis: 50%;
+    font-family : Montserrat;
+    font-size : 10px;
+    line-height : 12.38px;
+    color : #FFFFFF;
+  }
+
+  &__slide-images-descr  {
+    position: absolute;
+    text-align: center;
+    width: 98px;
+
+    &--one {
+      top: -40px;
+      left: 0;
+    }
+
+    &--two {
+      top: -36px;
+      right: 0
+    }
+
+    &--three {
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  &__slide-descr {
+    flex-basis: 40%;
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+  }
+
+  &__slide-descr-title {
+    font-family : Yeseva One;
+    font-size : 17px;
+    line-height : 19.17px;
+    color : #FFFFFF;
+  }
+
+  &__slide-descr-text {
+    font-family : Montserrat;
+    font-size : 10px;
+    line-height : 16.84px;
+    color : #FFFFFF;
+  }
+
+  &__btn {
+    width: 111px;
+    height: 25px;
+    margin: 0 auto;
+    margin-top: 47px;
+  }
+}
+
+@media (max-width: 764px) {
+  .insoles-choose {
+    height: auto;
+    padding-bottom: 30px;
+
+    &__title {
+      font-size : 16px;
+      line-height : 18px;
+    }
+
+    &__slide {
+      padding-top: 50px;
+      flex-flow: column;
+      align-items: center;
+    }
+
+    &__slider {
+      max-width: 240px;
+    }
+  }
+}

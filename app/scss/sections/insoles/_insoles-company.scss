@@ -1,0 +1,38 @@
+.insoles-company {
+
+
+  &__list {
+    margin-top: 27px;
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+  }
+
+  &__list-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-family : Montserrat;
+    font-size : 10px;
+    line-height : 12.38px;
+    color : #333333;
+  }
+  
+  &__list-img {
+    width: 22px;
+  }
+
+  &__list-text {
+    max-width: 170px;
+  }
+
+  &__content-title {
+    position: relative;
+    z-index: 100;
+    color : #FFFFFF;
+  }
+
+  &__content-white-text {
+    margin-top: 10px;
+  }
+}
