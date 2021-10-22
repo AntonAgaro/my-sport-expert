@@ -3,7 +3,15 @@
     transform: translate(-100%, 0);
   }
 
-  50% {
+  100% {
+    transform: translate(0, 0);
+  }
+
+}
+
+@keyframes ticker1 {
+
+  0% {
     transform: translate(0, 0);
   }
 
@@ -47,8 +55,7 @@ $duration: 40s;
     top: 0;
     right: 0;
     width: 100%;
-    animation: ticker $duration infinite linear forwards;
-    transform: translate(-100%, 0);
+    animation: ticker1 $duration infinite linear forwards;
 
     &:hover {
       .red-line__text--part2 {
@@ -61,10 +68,12 @@ $duration: 40s;
     }
 
     &--part1 {
+      gap: 10px;
     }
 
     &--part2 {
-      animation: $duration ticker $duration/2 infinite linear forwards;
+      animation: ticker $duration infinite linear forwards;
+      gap: 10px;
     }
   }
 
@@ -84,13 +93,19 @@ $duration: 40s;
 }
 
 
+@media (max-width: 1064px) {
+  .red-line {
+    height: 6px;
+    font-size: 6px;
+  }
+}
+
+@media (max-width: 767px) {
+  .red-line {
+    width: 300%;
+    padding: 0;
+
+  }
+}
 
 
-
-// .red-line{text-align:left;width:100%;overflow:hidden;white-space: nowrap;}
-// .red-line__text { width:100%;text-indent:0;animation: marquee 10s linear infinite}
-// .red-line__text:hover{animation-play-state: paused}
-// @keyframes marquee {
-// 0%  { transform: translate(-100%, 0); }
-// 100% { transform: translate(100%, 0); }
-// }
